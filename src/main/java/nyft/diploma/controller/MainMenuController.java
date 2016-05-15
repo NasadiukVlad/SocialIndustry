@@ -25,7 +25,7 @@ public class MainMenuController implements Initializable {
             Stage currentStage = (Stage) viewWorkerButton.getScene().getWindow();
             currentStage.close();
 
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/viewWorker.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/workerView.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setScene(new Scene(root1));
@@ -35,9 +35,54 @@ public class MainMenuController implements Initializable {
         }
     }
 
+    public void viewClient() {
+        try {
 
+            Stage currentStage = (Stage) viewWorkerButton.getScene().getWindow();
+            currentStage.close();
 
-    @Override
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/clientView.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void viewAppartment()  {
+        try {
+
+            Stage currentStage = (Stage) viewWorkerButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/freeAppartmentView.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void viewDeals()  {
+        try {
+
+            Stage currentStage = (Stage) viewWorkerButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/dealView.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public void initialize(URL location, ResourceBundle resources) {
 
     }

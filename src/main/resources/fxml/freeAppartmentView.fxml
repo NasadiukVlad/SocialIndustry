@@ -11,7 +11,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nyft.diploma.controller.ViewWorkerController">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nyft.diploma.controller.FreeAppartmentViewController">
     <columnConstraints>
         <ColumnConstraints />
         <ColumnConstraints />
@@ -22,18 +22,14 @@
         <RowConstraints />
     </rowConstraints>
     <children>
-        <AnchorPane prefHeight="468.0" prefWidth="698.0" GridPane.columnIndex="1">
+        <AnchorPane prefHeight="596.0" prefWidth="798.0" GridPane.columnIndex="1">
             <children>
                 <Label layoutX="75.0" layoutY="14.0" text="Автоматизована система управління відділом продажу ЖК &quot;Молодіжна ініціатива&quot;">
                     <font>
                         <Font size="15.0" />
                     </font></Label>
-            <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="398.0" prefWidth="642.0">
-              <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
-              </columns>
-            </TableView>
+                <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="519.0" prefWidth="630.0" />
+            <Button fx:id="toMenuButton" layoutX="694.0" layoutY="506.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
 
             </children>
         </AnchorPane>
