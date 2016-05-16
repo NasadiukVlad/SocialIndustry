@@ -1,43 +1,40 @@
-package nyft.diploma.controller;
+package nyft.diploma.controller.view_data;
 
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableView;
-
-import java.net.URL;
-import java.sql.Connection;
-import java.util.ResourceBundle;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import javafx.application.Application;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.value.ObservableValue;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 import javafx.util.Callback;
+import nyft.diploma.controller.DisplayController;
 import nyft.diploma.dao.DBConnect;
 
-/**
- * Created by Vlad on 08.05.2016.
- */
-public class WorkerViewController implements Initializable {
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.util.ResourceBundle;
 
+/**
+ * Created by Vlad on 14.05.2016.
+ */
+public class FreeAppartmentViewController implements Initializable {
     private ObservableList<ObservableList> data;
 
     @FXML
     private TableView tableView = new TableView();
 
     @FXML
-    private Button toMenuButton = new Button();
+    Button toMenuButton = new Button();
+
+    private DisplayController displayController = new DisplayController();
 
     public void buildData(){
 
@@ -49,7 +46,7 @@ public class WorkerViewController implements Initializable {
         try{
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "SELECT * from Manager";
+            String SQL = "SELECT * from Appartment";
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);
 
@@ -60,8 +57,8 @@ public class WorkerViewController implements Initializable {
                 //We are using non property style for making dynamic table
                 final int j = i;
                 TableColumn col = new TableColumn(rs.getMetaData().getColumnName(i+1));
-                col.setCellValueFactory(new Callback<CellDataFeatures<ObservableList,String>,ObservableValue<String>>(){
-                    public ObservableValue<String> call(CellDataFeatures<ObservableList, String> param) {
+                col.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<ObservableList,String>,ObservableValue<String>>(){
+                    public ObservableValue<String> call(TableColumn.CellDataFeatures<ObservableList, String> param) {
                         return new SimpleStringProperty(param.getValue().get(j).toString());
                     }
                 });
@@ -94,18 +91,6 @@ public class WorkerViewController implements Initializable {
     }
 
     public void goToMenu() {
-        try {
-
-            Stage currentStage = (Stage) toMenuButton.getScene().getWindow();
-            currentStage.close();
-
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/mainMenu.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root1));
-            stage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        displayController.viewFXML(toMenuButton, "/fxml/mainMenu.fxml");
     }
 }

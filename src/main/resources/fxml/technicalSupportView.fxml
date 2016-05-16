@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nyft.diploma.controller.additional_information.TechnicalSupportViewController">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="596.0" prefWidth="798.0" GridPane.columnIndex="1">
+            <children>
+                <Label layoutX="75.0" layoutY="14.0" text="Автоматизована система управління відділом продажу ЖК &quot;Молодіжна ініціатива&quot;">
+                    <font>
+                        <Font size="15.0" />
+                    </font></Label>
+                <!--
+                                <Button fx:id="toMenuButton" layoutX="694.0" layoutY="506.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
+                -->
+                <Label layoutX="259.0" layoutY="58.0" text="Коротка інструкція користувача системи" />
+                <Button fx:id="toMenuButton" layoutX="30.0" layoutY="527.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
+            <TextField layoutX="353.0" layoutY="129.0" prefHeight="31.0" prefWidth="200.0" />
+            <TextArea layoutX="259.0" layoutY="272.0" prefHeight="187.0" prefWidth="388.0" wrapText="true" />
+            <TextField layoutX="354.0" layoutY="192.0" prefHeight="31.0" prefWidth="200.0" />
+            <Label layoutX="244.0" layoutY="131.0" text="Ваше ім'я:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="244.0" layoutY="194.0" text="Ваш e-mail:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="75.0" layoutY="272.0" text="Ваше повідомлення:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="380.0" layoutY="481.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="147.0" text="Надіслати" />
+
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

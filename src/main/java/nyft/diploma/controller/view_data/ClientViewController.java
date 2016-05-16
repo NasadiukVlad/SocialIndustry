@@ -1,4 +1,4 @@
-package nyft.diploma.controller;
+package nyft.diploma.controller.view_data;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ChangeListener;
@@ -13,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.util.Callback;
+import nyft.diploma.controller.DisplayController;
 import nyft.diploma.dao.DBConnect;
 
 import java.net.URL;
@@ -44,6 +45,8 @@ public class ClientViewController implements Initializable {
 
     @FXML
     private RadioButton searchByAppartmentRb = new RadioButton();
+
+    private DisplayController displayController = new DisplayController();
 
     public void buildData() {
 
@@ -109,20 +112,8 @@ public class ClientViewController implements Initializable {
     }
 
     public void goToMenu() {
-        try {
-
-            Stage currentStage = (Stage) toMenuButton.getScene().getWindow();
-            currentStage.close();
-
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/mainMenu.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root1));
-            stage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+        displayController.viewFXML(toMenuButton, "/fxml/mainMenu.fxml");
+}
 
     public void searh() {
         if (searchByInitialsRb.isSelected()) {
