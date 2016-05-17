@@ -18,8 +18,21 @@ public class UserInstructionViewController {
     Button toMenuButton = new Button();
     DisplayController displayController = new DisplayController();
 
+    @FXML
+    Button authorizationInfoButton = new Button();
+
+    @FXML
+    Button technicalSupportInfoButton = new Button();
 
     public void goToMenu() {
         displayController.viewFXML(toMenuButton, "/fxml/mainMenu.fxml");
+    }
+
+    public void viewAuthorizationInstruction()  {
+        displayController.viewFXML(authorizationInfoButton, "/fxml/infoAuthorization.fxml" );
+    }
+
+    public void viewTechnicalSupportInstruction()  {
+        displayController.viewFXML(authorizationInfoButton, "/fxml/infoTechnicalSupport.fxml" );
     }
 }

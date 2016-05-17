@@ -72,6 +72,18 @@ public class MainMenuController implements Initializable {
         displayController.viewFXML(editUserTableButton, "/fxml/editClient.fxml" );
     }
 
+    public void viewEditWorkerTable() {
+        displayController.viewFXML(editWorkersTableButton, "/fxml/editWorker.fxml" );
+    }
+
+    public void viewEditAppartmentTable() {
+        displayController.viewFXML(editAppartmentsTableButton, "/fxml/editAppartment.fxml" );
+    }
+
+    public void viewEditDealsTable() {
+        displayController.viewFXML(editDealstTableButton, "/fxml/editDeals.fxml" );
+    }
+
     public void changeUser() {
         try {
 

@@ -22,53 +22,57 @@
     <RowConstraints />
 </rowConstraints>
 <children>
-    <AnchorPane prefHeight="468.0" prefWidth="698.0" GridPane.columnIndex="1">
+    <AnchorPane prefHeight="530.0" prefWidth="933.0" GridPane.columnIndex="1">
         <children>
             <Label layoutX="75.0" layoutY="14.0" text="Автоматизована система управління відділом продажу ЖК &quot;Молодіжна ініціатива&quot;">
                 <font>
                     <Font size="15.0" />
                 </font></Label>
             <Button layoutX="37.0" layoutY="82.0" mnemonicParsing="false" onAction="#viewClient" prefHeight="21.0" prefWidth="144.0" text="База клієнтів" />
-            <Button fx:id="viewWorkerButton" layoutX="38.0" layoutY="119.0" mnemonicParsing="false" onAction="#viewWorker" prefHeight="25.0" prefWidth="144.0" text="База працівників" />
-            <Button layoutX="38.0" layoutY="154.0" mnemonicParsing="false" onAction="#viewAppartment" prefHeight="25.0" prefWidth="144.0" text="Вільні квартири" />
-            <Button layoutX="38.0" layoutY="189.0" mnemonicParsing="false" onAction="#viewDeals" prefHeight="25.0" prefWidth="144.0" text="База угод" />
-            <Label layoutX="65.0" layoutY="56.0" text="Перегляд даних" />
+            <Button fx:id="viewWorkerButton" layoutX="38.0" layoutY="125.0" mnemonicParsing="false" onAction="#viewWorker" prefHeight="25.0" prefWidth="144.0" text="База працівників" />
+            <Button layoutX="38.0" layoutY="168.0" mnemonicParsing="false" onAction="#viewAppartment" prefHeight="25.0" prefWidth="144.0" text="Вільні квартири" />
+            <Button layoutX="38.0" layoutY="211.0" mnemonicParsing="false" onAction="#viewDeals" prefHeight="25.0" prefWidth="144.0" text="База угод" />
+            <Label layoutX="63.0" layoutY="57.0" text="Перегляд даних" />
             <ImageView fitHeight="56.0" fitWidth="53.0" layoutX="194.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
                 <image>
                     <Image url="@../images/view.png" />
                 </image>
             </ImageView>
-            <Line endX="100.0" layoutX="119.0" layoutY="234.0" startX="-100.0" />
-            <Label layoutX="468.0" layoutY="56.0" text="Редагування даних" />
-            <Button fx:id="editUserTableButton" onAction="#viewEditUserTable" layoutX="448.0" layoutY="82.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База клієнтів" />
-            <Button fx:id="editWorkersTableButton" layoutX="448.0" layoutY="119.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База працівників" />
-            <Button fx:id="editAppartmentsTableButton" layoutX="448.0" layoutY="154.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Вільні квартири" />
-            <Button fx:id="editDealstTableButton" layoutX="448.0" layoutY="189.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База угод" />
-            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="611.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+            <Label layoutX="698.0" layoutY="57.0" text="Редагування даних" />
+            <Button fx:id="editUserTableButton" layoutX="691.0" layoutY="82.0" mnemonicParsing="false" onAction="#viewEditUserTable" prefHeight="25.0" prefWidth="144.0" text="База клієнтів" />
+            <Button fx:id="editWorkersTableButton" layoutX="691.0" layoutY="125.0" mnemonicParsing="false" onAction="#viewEditWorkerTable" prefHeight="25.0" prefWidth="144.0" text="База працівників" />
+            <Button fx:id="editAppartmentsTableButton" layoutX="691.0" layoutY="168.0" mnemonicParsing="false" onAction="#viewEditAppartmentTable" prefHeight="25.0" prefWidth="144.0" text="Вільні квартири" />
+            <Button fx:id="editDealstTableButton" layoutX="691.0" layoutY="211.0" mnemonicParsing="false" onAction="#viewEditDealsTable" prefHeight="25.0" prefWidth="144.0" text="База угод" />
+            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="870.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
                 <image>
                     <Image url="@../images/edit.jpg" />
                 </image>
             </ImageView>
-            <Label layoutX="50.0" layoutY="245.0" text="Формування звітності" />
-            <Button layoutX="39.0" layoutY="270.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База клієнтів" />
-            <Button layoutX="38.0" layoutY="308.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База працівників" />
-            <Button layoutX="39.0" layoutY="342.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Вільні квартири" />
-            <Button layoutX="38.0" layoutY="375.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База угод" />
-            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="193.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+            <Label layoutX="50.0" layoutY="309.0" text="Формування звітності" />
+            <Button layoutX="48.0" layoutY="338.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База клієнтів" />
+            <Button layoutX="48.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База працівників" />
+            <Button layoutX="46.0" layoutY="424.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Вільні квартири" />
+            <Button layoutX="45.0" layoutY="467.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База угод" />
+            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="200.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
                 <image>
                     <Image url="@../images/report.png" />
                 </image>
             </ImageView>
-            <Label layoutX="458.0" layoutY="246.0" text="Додаткова інформація" />
-            <Button fx:id="userInstructionButton" onAction="#viewUserInstruction" layoutX="448.0" layoutY="270.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="144.0" text="Інструкція користувача" />
-            <Button fx:id="technicalSupportButton" onAction="#viewTechnicalSupport" layoutX="448.0" layoutY="308.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Технічна підтримка" />
-            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="611.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+            <Label layoutX="685.0" layoutY="309.0" text="Додаткова інформація" />
+            <Button fx:id="userInstructionButton" layoutX="668.0" layoutY="338.0" mnemonicParsing="false" onAction="#viewUserInstruction" prefHeight="31.0" prefWidth="191.0" text="Інструкція користувача" />
+            <Button fx:id="technicalSupportButton" layoutX="668.0" layoutY="381.0" mnemonicParsing="false" onAction="#viewTechnicalSupport" prefHeight="31.0" prefWidth="191.0" text="Технічна підтримка" />
+            <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="875.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/additional_info.jpg" />
                </image>
             </ImageView>
-            <Button layoutX="448.0" layoutY="342.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Використання часу" />
-            <Button fx:id="changeUserButton" onAction="#changeUser" layoutX="448.0" layoutY="375.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Змінити користувача" />
+            <Button layoutX="668.0" layoutY="424.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="191.0" text="Використання часу" />
+            <Button fx:id="changeUserButton" layoutX="668.0" layoutY="467.0" mnemonicParsing="false" onAction="#changeUser" prefHeight="31.0" prefWidth="191.0" text="Змінити користувача" />
+            <ImageView fitHeight="311.0" fitWidth="234.0" layoutX="343.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/main_info_logo.png" />
+               </image>
+            </ImageView>
 
         </children>
     </AnchorPane>

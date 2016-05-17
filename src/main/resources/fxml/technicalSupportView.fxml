@@ -31,27 +31,36 @@
                 <!--
                                 <Button fx:id="toMenuButton" layoutX="694.0" layoutY="506.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
                 -->
-                <Label layoutX="259.0" layoutY="58.0" text="Коротка інструкція користувача системи" />
+                <Label layoutX="292.0" layoutY="57.0" text="Технічна підтримка">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
                 <Button fx:id="toMenuButton" layoutX="30.0" layoutY="527.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
-            <TextField layoutX="353.0" layoutY="129.0" prefHeight="31.0" prefWidth="200.0" />
-            <TextArea layoutX="259.0" layoutY="272.0" prefHeight="187.0" prefWidth="388.0" wrapText="true" />
-            <TextField layoutX="354.0" layoutY="192.0" prefHeight="31.0" prefWidth="200.0" />
-            <Label layoutX="244.0" layoutY="131.0" text="Ваше ім'я:">
+            <TextField fx:id="supportName" layoutX="353.0" layoutY="136.0" prefHeight="31.0" prefWidth="254.0" />
+            <TextArea fx:id="supportComment" layoutX="333.0" layoutY="272.0" prefHeight="237.0" prefWidth="388.0" wrapText="true" />
+            <TextField fx:id="supportEmail" layoutX="354.0" layoutY="199.0" prefHeight="31.0" prefWidth="254.0" />
+            <Label layoutX="244.0" layoutY="138.0" text="Ваше ім'я:">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="244.0" layoutY="194.0" text="Ваш e-mail:">
+            <Label layoutX="244.0" layoutY="201.0" text="Ваш e-mail:">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="75.0" layoutY="272.0" text="Ваше повідомлення:">
+            <Label layoutX="129.0" layoutY="272.0" text="Ваше повідомлення:">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button layoutX="380.0" layoutY="481.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="147.0" text="Надіслати" />
+            <Button fx:id="sendButton" layoutX="454.0" layoutY="527.0" mnemonicParsing="false" onAction="#sendEmail" prefHeight="31.0" prefWidth="147.0" text="Надіслати" />
+            <Label fx:id="statusLabel" layoutX="239.0" layoutY="100.0" text="Запит у технічний відділ успішно відправлено!" visible="false" />
+            <ImageView fitHeight="187.0" fitWidth="232.0" layoutX="75.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Technical-Support.png" />
+               </image>
+            </ImageView>
 
             </children>
         </AnchorPane>
