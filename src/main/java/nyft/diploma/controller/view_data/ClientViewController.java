@@ -1,30 +1,33 @@
 package nyft.diploma.controller.view_data;
 
+import javafx.application.Application;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 import nyft.diploma.controller.DisplayController;
 import nyft.diploma.dao.DBConnect;
 
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.ResultSet;
+import java.sql.*;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
 /**
  * Created by Vlad on 14.05.2016.
  */
-public class ClientViewController implements Initializable {
+public class ClientViewController extends Application implements Initializable {
 
     private ObservableList<ObservableList> data;
 
@@ -32,10 +35,28 @@ public class ClientViewController implements Initializable {
     private TextField clientName = new TextField();
 
     @FXML
+    private TextField addInitialsField = new TextField();
+
+    @FXML
+    private TextField addMobileField = new TextField();
+
+    @FXML
+    private TextField addAdressField = new TextField();
+
+    @FXML
+    private TextField addPasportField = new TextField();
+
+    @FXML
+    private TextField addAppartmentCode = new TextField();
+
+    @FXML
     private TableView tableView = new TableView();
 
     @FXML
     private Button toMenuButton = new Button();
+
+    @FXML
+    private Button addButton = new Button();
 
     @FXML
     private RadioButton searchByInitialsRb = new RadioButton();
@@ -47,6 +68,9 @@ public class ClientViewController implements Initializable {
     private RadioButton searchByAppartmentRb = new RadioButton();
 
     private DisplayController displayController = new DisplayController();
+    private String editData = new String();
+    private String dataArray[];
+    Statement stmt = null;
 
     public void buildData() {
 
@@ -54,9 +78,8 @@ public class ClientViewController implements Initializable {
 
     ToggleGroup group = new ToggleGroup();
 
-
     public void initialize(URL location, ResourceBundle resources) {
-
+        tableView.setEditable(true);
         searchByInitialsRb.setToggleGroup(group);
         searchByAdressRb.setToggleGroup(group);
         searchByAppartmentRb.setToggleGroup(group);
@@ -82,6 +105,7 @@ public class ClientViewController implements Initializable {
                     public ObservableValue<String> call(TableColumn.CellDataFeatures<ObservableList, String> param) {
                         return new SimpleStringProperty(param.getValue().get(j).toString());
                     }
+
                 });
 
                 tableView.getColumns().addAll(col);
@@ -142,6 +166,9 @@ public class ClientViewController implements Initializable {
 
                     tableView.getColumns().addAll(col);
                     System.out.println("Column [" + i + "] ");
+                    col.setCellFactory(TextFieldTableCell.forTableColumn());
+                    tableView.setEditable(true);
+
                 }
 
                 /********************************
@@ -166,5 +193,71 @@ public class ClientViewController implements Initializable {
                 System.out.println("Error on Building Data");
             }
         }
+    }
+
+    public void edit() {
+        /*TablePosition pos = (TablePosition) tableView.getSelectionModel().getSelectedCells().get(0);
+        int row = pos.getRow();*/
+
+// Item here is the table view type:
+   //     Item item = table.getItems().get(row);
+
+        /*TableColumn col = pos.getTableColumn();*/
+
+// this gives the value in the selected cell:
+        /*String editData = (String) col.getCellObservableValue(tableView.getItems().get(row)).getValue();
+        System.out.println(editData);*/
+        editData = tableView.getSelectionModel().getSelectedItem().toString();
+        System.out.println(editData);
+        char arr[] = editData.toCharArray();
+        editData = editData.copyValueOf(arr, 1, arr.length - 2);
+        System.out.println(editData);
+        dataArray = editData.split(",");
+        System.out.println(Arrays.toString(dataArray));
+        System.out.println(dataArray[0] +"  "+ dataArray[1]);
+        addInitialsField.setText(dataArray[1]);
+        addMobileField.setText(dataArray[2]);
+        addAdressField.setText(dataArray[3]);
+        addPasportField.setText(dataArray[4]);
+        addAppartmentCode.setText(dataArray[5]);
+        /*String[] ary = tableView.getSelectionModel().getSelectedItem().split("");
+        System.out.println(pos.getRow());
+*/
+    }
+
+    public void add() {
+        Connection connection;
+        try {
+            connection = DBConnect.connect();
+            String SQL = "UPDATE Client SET Initials = '" + addInitialsField.getText() + "', Mobile_phone = '" + addMobileField.getText() + "', Adress = '" + addAdressField.getText() + "', Passport_serial = '" + addPasportField.getText() + "', Appartment_code = '" + addAppartmentCode.getText() + "' WHERE Client_code = '" + dataArray[0] + "'";
+            //ResultSet
+           // ResultSet rs = connection.createStatement().executeUpdate(SQL);
+            /*PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+            preparedStatement.executeUpdate();*/
+
+            stmt = connection.createStatement();
+            stmt.executeUpdate(SQL);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        //SQL FOR SELECTING ALL OF CUSTOMER
+
+      //  data.add(addInitialsField.getText(), addAdressField.getText(), addMobileField.getText(), addPasportField.getText(), addAppartmentCode.getText());
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+     /*   tableView.setEditable(true);
+
+        titleCol.setCellFactory(TextFieldTableCell.forTableColumn());
+        titleCol.setOnEditCommit(new EventHandler<TableColumn.CellEditEvent>() {
+
+            @Override
+            public void handle(TableColumn.CellEditEvent t) {
+
+                ((Book) t.getTableView().getItems().get(
+                        t.getTablePosition().getRow())).setTitle(t.getNewValue());
+            }
+        });*/
     }
 }
