@@ -22,14 +22,17 @@
         <RowConstraints />
     </rowConstraints>
     <children>
-        <AnchorPane prefHeight="617.0" prefWidth="857.0" GridPane.columnIndex="1">
+        <AnchorPane prefHeight="692.0" prefWidth="1018.0" GridPane.columnIndex="1">
             <children>
                 <Label layoutX="75.0" layoutY="14.0" text="Автоматизована система управління відділом продажу ЖК &quot;Молодіжна ініціатива&quot;">
                     <font>
                         <Font size="15.0" />
                     </font></Label>
-            <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="398.0" prefWidth="642.0" />
-            <Button fx:id="toMenuButton" layoutX="690.0" layoutY="519.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
+            <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="589.0" prefWidth="721.0" />
+            <Button fx:id="toMenuButton" layoutX="832.0" layoutY="613.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
+            <Button fx:id="searchButton" onAction="#searchByInitials" layoutX="833.0" layoutY="385.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" text="Знайти" />
+            <TextField fx:id="searchInput" layoutX="784.0" layoutY="324.0" />
+            <Label layoutX="789.0" layoutY="286.0" text="Пошук по ПІБ менеджера" />
 
             </children>
         </AnchorPane>
