@@ -5,9 +5,9 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.TextFieldTableCell;
-import javafx.stage.Stage;
 import javafx.util.Callback;
 import nyft.diploma.controller.DisplayController;
 import nyft.diploma.dao.DBConnect;
@@ -23,20 +23,20 @@ import java.util.ResourceBundle;
 /**
  * Created by Vladyslav.Nasadiuk on 17.05.2016.
  */
-public class EditWorkerController {
+public class EditWorkerController implements Initializable {
     private ObservableList<ObservableList> data;
 
     @FXML
-    private TextField clientName = new TextField();
+    private TextField searchInput = new TextField();
 
     @FXML
     private TextField addInitialsField = new TextField();
 
     @FXML
-    private TextField addMobileField = new TextField();
+    private TextField addExperienceField = new TextField();
 
     @FXML
-    private TextField addAdressField = new TextField();
+    private TextField addSuccessfulDealsField = new TextField();
 
     @FXML
     private TextField addPasportField = new TextField();
@@ -85,7 +85,7 @@ public class EditWorkerController {
         try {
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "SELECT * from Client";
+            String SQL = "SELECT * from Manager";
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);
 
@@ -134,61 +134,61 @@ public class EditWorkerController {
         displayController.viewFXML(toMenuButton, "/fxml/mainMenu.fxml");
     }
 
-    public void searh() {
-        if (searchByInitialsRb.isSelected()) {
-            Connection c;
-            String userPIB = clientName.getText();
-            data = FXCollections.observableArrayList();
-            try {
-                c = DBConnect.connect();
-                //SQL FOR SELECTING ALL OF CUSTOMER
-                String SQL = "SELECT * from Client WHERE Initials = '" + userPIB + "'";
-                //ResultSet
-                ResultSet rs = c.createStatement().executeQuery(SQL);
+    public void searchByInitials() {
 
-                /**********************************
-                 * TABLE COLUMN ADDED DYNAMICALLY *
-                 **********************************/
-                for (int i = 0; i < rs.getMetaData().getColumnCount(); i++) {
-                    //We are using non property style for making dynamic table
-                    final int j = i;
-                    TableColumn col = new TableColumn(rs.getMetaData().getColumnName(i + 1));
-                    col.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<ObservableList, String>, ObservableValue<String>>() {
-                        public ObservableValue<String> call(TableColumn.CellDataFeatures<ObservableList, String> param) {
-                            return new SimpleStringProperty(param.getValue().get(j).toString());
-                        }
-                    });
+        Connection c;
+        String managerInitials = searchInput.getText();
+        data = FXCollections.observableArrayList();
+        try {
+            c = DBConnect.connect();
+            //SQL FOR SELECTING ALL OF CUSTOMER
+            String SQL = "SELECT * from Manager WHERE Initials = '" + managerInitials + "'";
+            //ResultSet
+            ResultSet rs = c.createStatement().executeQuery(SQL);
 
-                    tableView.getColumns().addAll(col);
-                    System.out.println("Column [" + i + "] ");
-                    col.setCellFactory(TextFieldTableCell.forTableColumn());
-                    tableView.setEditable(true);
-
-                }
-
-                /********************************
-                 * Data added to ObservableList *
-                 ********************************/
-                while (rs.next()) {
-                    //Iterate Row
-                    ObservableList<String> row = FXCollections.observableArrayList();
-                    for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
-                        //Iterate Column
-                        row.add(rs.getString(i));
+            /**********************************
+             * TABLE COLUMN ADDED DYNAMICALLY *
+             **********************************/
+            for (int i = 0; i < rs.getMetaData().getColumnCount(); i++) {
+                //We are using non property style for making dynamic table
+                final int j = i;
+                TableColumn col = new TableColumn(rs.getMetaData().getColumnName(i + 1));
+                col.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<ObservableList, String>, ObservableValue<String>>() {
+                    public ObservableValue<String> call(TableColumn.CellDataFeatures<ObservableList, String> param) {
+                        return new SimpleStringProperty(param.getValue().get(j).toString());
                     }
-                    System.out.println("Row [1] added " + row);
-                    data.add(row);
+                });
 
-                }
+                tableView.getColumns().addAll(col);
+                System.out.println("Column [" + i + "] ");
+                col.setCellFactory(TextFieldTableCell.forTableColumn());
+                tableView.setEditable(true);
 
-                //FINALLY ADDED TO TableView
-                tableView.setItems(data);
-            } catch (Exception e) {
-                e.printStackTrace();
-                System.out.println("Error on Building Data");
             }
+
+            /********************************
+             * Data added to ObservableList *
+             ********************************/
+            while (rs.next()) {
+                //Iterate Row
+                ObservableList<String> row = FXCollections.observableArrayList();
+                for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
+                    //Iterate Column
+                    row.add(rs.getString(i));
+                }
+                System.out.println("Row [1] added " + row);
+                data.add(row);
+
+            }
+
+            //FINALLY ADDED TO TableView
+            tableView.setItems(data);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Error on Building Data");
         }
     }
+
 
     public void edit() {
         /*TablePosition pos = (TablePosition) tableView.getSelectionModel().getSelectedCells().get(0);
@@ -211,10 +211,8 @@ public class EditWorkerController {
         System.out.println(Arrays.toString(dataArray));
         System.out.println(dataArray[0] +"  "+ dataArray[1]);
         addInitialsField.setText(dataArray[1]);
-        addMobileField.setText(dataArray[2]);
-        addAdressField.setText(dataArray[3]);
-        addPasportField.setText(dataArray[4]);
-        addAppartmentCode.setText(dataArray[5]);
+        addExperienceField.setText(dataArray[2]);
+        addSuccessfulDealsField.setText(dataArray[3]);
         /*String[] ary = tableView.getSelectionModel().getSelectedItem().split("");
         System.out.println(pos.getRow());
 */
@@ -224,7 +222,7 @@ public class EditWorkerController {
         Connection connection;
         try {
             connection = DBConnect.connect();
-            String SQL = "UPDATE Client SET Initials = '" + addInitialsField.getText() + "', Mobile_phone = '" + addMobileField.getText() + "', Adress = '" + addAdressField.getText() + "', Passport_serial = '" + addPasportField.getText() + "', Appartment_code = '" + addAppartmentCode.getText() + "' WHERE Client_code = '" + dataArray[0] + "'";
+            String SQL = "UPDATE Manager SET Initials = '" + addInitialsField.getText() + "', Experience = '" + addExperienceField.getText() + "', Successful_deals = '" + addSuccessfulDealsField.getText() + "' WHERE Manager_code = '" + dataArray[0] + "'";
             //ResultSet
             // ResultSet rs = connection.createStatement().executeUpdate(SQL);
             /*PreparedStatement preparedStatement = connection.prepareStatement(SQL);
@@ -237,7 +235,7 @@ public class EditWorkerController {
         }
         //SQL FOR SELECTING ALL OF CUSTOMER
 
-        //  data.add(addInitialsField.getText(), addAdressField.getText(), addMobileField.getText(), addPasportField.getText(), addAppartmentCode.getText());
+        //  data.add(addInitialsField.getText(), addSuccessfulDealsField.getText(), addExperienceField.getText(), addPasportField.getText(), addAppartmentCode.getText());
     }
 
 }

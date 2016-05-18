@@ -37,10 +37,10 @@
                 <RadioButton fx:id="searchByInitialsRb" layoutX="731.0" layoutY="229.0" mnemonicParsing="false" text="Пошук за ПІБ" />
                 <RadioButton fx:id="searchByAdressRb" layoutX="728.0" layoutY="266.0" mnemonicParsing="false" text="Пошук за адресою" />
                 <RadioButton fx:id="searchByAppartmentRb" layoutX="728.0" layoutY="309.0" mnemonicParsing="false" text="Пошук за квартирою" />
-                <TextField fx:id="addInitialsField" layoutX="31.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="ПІБ" />
-                <TextField fx:id="addMobileField" layoutX="175.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Телефон" />
-                <TextField fx:id="addAdressField" layoutX="320.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Адреса" />
-                <TextField fx:id="addPasportField" layoutX="471.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Серія_паспорта" />
+                <TextField fx:id="addDealDateField" layoutX="31.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="ПІБ" />
+                <TextField fx:id="addAdressField" layoutX="180.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Адреса" />
+                <TextField fx:id="addPriceField" layoutX="324.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Телефон" />
+                <TextField fx:id="addClientCodeField" layoutX="471.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Серія_паспорта" />
                 <TextField fx:id="addAppartmentCode" layoutX="619.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Код квартири" />
                 <Button fx:id="addButton" layoutX="773.0" layoutY="584.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="90.0" text="Додати" />
                 <Button layoutX="771.0" layoutY="471.0" mnemonicParsing="false" onAction="#edit" text="Edit" />

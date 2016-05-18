@@ -196,7 +196,7 @@ public class ClientViewController implements Initializable {
     }
 
     public void searhByAdress() {
-        if (searchByInitialsRb.isSelected()) {
+        if (searchByAdressRb.isSelected()) {
             Connection c;
             String userPIB = clientName.getText();
             data = FXCollections.observableArrayList();
@@ -251,11 +251,71 @@ public class ClientViewController implements Initializable {
         }
     }
 
+    public void searhByAppartment() {
+        if (searchByAppartmentRb.isSelected()) {
+            Connection c;
+            String userPIB = clientName.getText();
+            data = FXCollections.observableArrayList();
+            try {
+                c = DBConnect.connect();
+                //SQL FOR SELECTING ALL OF CUSTOMER
+                String SQL = "SELECT * from Client WHERE Appartment_code = '" + clientName.getText() + "'";
+                //ResultSet
+                ResultSet rs = c.createStatement().executeQuery(SQL);
+
+                /**********************************
+                 * TABLE COLUMN ADDED DYNAMICALLY *
+                 **********************************/
+                for (int i = 0; i < rs.getMetaData().getColumnCount(); i++) {
+                    //We are using non property style for making dynamic table
+                    final int j = i;
+                    TableColumn col = new TableColumn(rs.getMetaData().getColumnName(i + 1));
+                    col.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<ObservableList, String>, ObservableValue<String>>() {
+                        public ObservableValue<String> call(TableColumn.CellDataFeatures<ObservableList, String> param) {
+                            return new SimpleStringProperty(param.getValue().get(j).toString());
+                        }
+                    });
+
+                    tableView.getColumns().addAll(col);
+                    System.out.println("Column [" + i + "] ");
+                    col.setCellFactory(TextFieldTableCell.forTableColumn());
+                    tableView.setEditable(true);
+
+                }
+
+                /********************************
+                 * Data added to ObservableList *
+                 ********************************/
+                while (rs.next()) {
+                    //Iterate Row
+                    ObservableList<String> row = FXCollections.observableArrayList();
+                    for (int i = 1; i <= rs.getMetaData().getColumnCount(); i++) {
+                        //Iterate Column
+                        row.add(rs.getString(i));
+                    }
+                    System.out.println("Row [1] added " + row);
+                    data.add(row);
+
+                }
+
+                //FINALLY ADDED TO TableView
+                tableView.setItems(data);
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.out.println("Error on Building Data");
+            }
+        }
+    }
+
 
     public void selectSearch() {
         if (searchByInitialsRb.isSelected()) {
             searhByUser();
-        } else if (searchByAppartmentRb.isSelected()) {
+        }
+        if (searchByAppartmentRb.isSelected()) {
+            searhByAppartment();
+        }
+        if (searchByAdressRb.isSelected()) {
             searhByAdress();
         }
     }

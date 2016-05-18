@@ -5,9 +5,9 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.TextFieldTableCell;
-import javafx.stage.Stage;
 import javafx.util.Callback;
 import nyft.diploma.controller.DisplayController;
 import nyft.diploma.dao.DBConnect;
@@ -23,23 +23,23 @@ import java.util.ResourceBundle;
 /**
  * Created by Vladyslav.Nasadiuk on 17.05.2016.
  */
-public class EditDealsController {
+public class EditDealsController implements Initializable {
     private ObservableList<ObservableList> data;
 
     @FXML
     private TextField clientName = new TextField();
 
     @FXML
-    private TextField addInitialsField = new TextField();
-
-    @FXML
-    private TextField addMobileField = new TextField();
+    private TextField addDealDateField = new TextField();
 
     @FXML
     private TextField addAdressField = new TextField();
 
     @FXML
-    private TextField addPasportField = new TextField();
+    private TextField addPriceField = new TextField();
+
+    @FXML
+    private TextField addClientCodeField = new TextField();
 
     @FXML
     private TextField addAppartmentCode = new TextField();
@@ -85,7 +85,7 @@ public class EditDealsController {
         try {
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "SELECT * from Client";
+            String SQL = "SELECT * from Deal";
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);
 
@@ -210,10 +210,10 @@ public class EditDealsController {
         dataArray = editData.split(",");
         System.out.println(Arrays.toString(dataArray));
         System.out.println(dataArray[0] +"  "+ dataArray[1]);
-        addInitialsField.setText(dataArray[1]);
-        addMobileField.setText(dataArray[2]);
-        addAdressField.setText(dataArray[3]);
-        addPasportField.setText(dataArray[4]);
+        addDealDateField.setText(dataArray[1]);
+        addAdressField.setText(dataArray[2]);
+        addPriceField.setText(dataArray[3]);
+        addClientCodeField.setText(dataArray[4]);
         addAppartmentCode.setText(dataArray[5]);
         /*String[] ary = tableView.getSelectionModel().getSelectedItem().split("");
         System.out.println(pos.getRow());
@@ -224,7 +224,7 @@ public class EditDealsController {
         Connection connection;
         try {
             connection = DBConnect.connect();
-            String SQL = "UPDATE Client SET Initials = '" + addInitialsField.getText() + "', Mobile_phone = '" + addMobileField.getText() + "', Adress = '" + addAdressField.getText() + "', Passport_serial = '" + addPasportField.getText() + "', Appartment_code = '" + addAppartmentCode.getText() + "' WHERE Client_code = '" + dataArray[0] + "'";
+            String SQL = "UPDATE Deal SET Deal_date = '" + addDealDateField.getText() + "', Adress = '" + addAdressField.getText() + "', Price = '" + addPriceField.getText() + "', Client_code = '" + addClientCodeField.getText() + "', Appartment_code = '" + addAppartmentCode.getText() + "' WHERE Deal_code = '" + dataArray[0] + "'";
             //ResultSet
             // ResultSet rs = connection.createStatement().executeUpdate(SQL);
             /*PreparedStatement preparedStatement = connection.prepareStatement(SQL);
@@ -237,7 +237,7 @@ public class EditDealsController {
         }
         //SQL FOR SELECTING ALL OF CUSTOMER
 
-        //  data.add(addInitialsField.getText(), addAdressField.getText(), addMobileField.getText(), addPasportField.getText(), addAppartmentCode.getText());
+        //  data.add(addDealDateField.getText(), addPriceField.getText(), addPriceField.getText(), addClientCodeField.getText(), addAppartmentCode.getText());
     }
 
 }

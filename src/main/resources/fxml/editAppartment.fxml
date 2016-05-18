@@ -29,7 +29,6 @@
                         <Font size="15.0" />
                     </font></Label>
                 <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="507.0" prefWidth="642.0" />
-                <Button layoutX="778.0" layoutY="401.0" mnemonicParsing="false" onAction="#searh" prefHeight="25.0" prefWidth="90.0" text="Знайти" />
                 <Button fx:id="toMenuButton" layoutX="771.0" layoutY="536.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
                 <TextField fx:id="addAdressField" layoutX="31.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Адреса" />
                 <TextField fx:id="addPriceField" layoutX="175.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Ціна" />

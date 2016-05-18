@@ -5,6 +5,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.Callback;
@@ -22,7 +23,7 @@ import java.util.ResourceBundle;
 /**
  * Created by Vladyslav.Nasadiuk on 17.05.2016.
  */
-public class EditAppartmentController {
+public class EditAppartmentController implements Initializable {
     private ObservableList<ObservableList> data;
 
     @FXML
@@ -58,6 +59,9 @@ public class EditAppartmentController {
     @FXML
     private RadioButton searchByAppartmentRb = new RadioButton();
 
+    @FXML
+    private TextField searchInput = new TextField();
+
     private DisplayController displayController = new DisplayController();
     private String editData = new String();
     private String dataArray[];
@@ -81,7 +85,7 @@ public class EditAppartmentController {
         try {
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "SELECT * from Client";
+            String SQL = "SELECT * from Appartment";
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);
 
