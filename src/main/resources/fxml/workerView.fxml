@@ -28,9 +28,9 @@
                     <font>
                         <Font size="15.0" />
                     </font></Label>
-            <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="589.0" prefWidth="721.0" />
-            <Button fx:id="toMenuButton" layoutX="832.0" layoutY="613.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
-            <Button fx:id="searchButton" onAction="#searchByInitials" layoutX="833.0" layoutY="385.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" text="Знайти" />
+            <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="618.0" prefWidth="721.0" />
+            <Button fx:id="toMenuButton" layoutX="833.0" layoutY="612.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
+            <Button fx:id="searchButton" layoutX="833.0" layoutY="385.0" mnemonicParsing="false" onAction="#searchByInitials" prefHeight="31.0" prefWidth="90.0" text="Знайти" />
             <TextField fx:id="searchInput" layoutX="784.0" layoutY="324.0" />
             <Label layoutX="789.0" layoutY="286.0" text="Пошук по ПІБ менеджера" />
 

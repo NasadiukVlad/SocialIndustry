@@ -84,6 +84,11 @@ public class MainMenuController implements Initializable {
         displayController.viewFXML(editDealstTableButton, "/fxml/editDeals.fxml" );
     }
 
+    public void viewTimeTrackingTable() {
+        displayController.viewFXML(editDealstTableButton, "/fxml/timeTracking.fxml" );
+    }
+
+
     public void changeUser() {
         try {
 

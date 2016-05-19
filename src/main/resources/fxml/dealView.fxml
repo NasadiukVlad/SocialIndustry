@@ -29,9 +29,9 @@
                         <Font size="15.0" />
                     </font></Label>
                 <TableView fx:id="tableView" layoutX="24.0" layoutY="53.0" prefHeight="563.0" prefWidth="727.0" />
-            <Button fx:id="toMenuButton" layoutX="834.0" layoutY="534.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
+            <Button fx:id="toMenuButton" layoutX="834.0" layoutY="529.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
                 <TextField fx:id="searchInput" layoutX="785.0" layoutY="327.0" />
-                <Button fx:id="searchButton" layoutX="834.0" layoutY="386.0" mnemonicParsing="false" onAction="#searchByAdress" prefHeight="31.0" prefWidth="90.0" text="Знайти" />
+                <Button fx:id="searchButton" layoutX="834.0" layoutY="387.0" mnemonicParsing="false" onAction="#searchByAdress" prefHeight="31.0" prefWidth="90.0" text="Знайти" />
                 <Label layoutX="821.0" layoutY="283.0" text="Пошук по адресі" />
 
             </children>
