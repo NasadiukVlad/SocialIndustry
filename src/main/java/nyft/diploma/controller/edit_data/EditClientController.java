@@ -68,6 +68,9 @@ public class EditClientController implements Initializable {
     @FXML
     private RadioButton searchByAppartmentRb = new RadioButton();
 
+    @FXML
+    private Button addItemButton = new Button();
+
     private DisplayController displayController = new DisplayController();
     private String editData = new String();
     private String dataArray[];
@@ -339,7 +342,7 @@ public class EditClientController implements Initializable {
 
     }
 
-    public void add() {
+    public void update() {
         Connection connection;
         try {
             connection = DBConnect.connect();
@@ -352,6 +355,22 @@ public class EditClientController implements Initializable {
             e.printStackTrace();
         }
 
+    }
+
+    /*INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+    VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway');*/
+
+    public void addNewItem() {
+        Connection connection;
+        try {
+            connection = DBConnect.connect();
+            String SQL = "Insert INTO Client(Initials, Mobile_phone, Adress, Passport_serial, Appartment_code) VALUES ('" + addInitialsField.getText() + "','" + addMobileField.getText() + "','" + addAdressField.getText() + "','" + addPasportField.getText() + "','" + addAppartmentCode.getText() + "');" ;
+
+            stmt = connection.createStatement();
+            stmt.executeUpdate(SQL);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 

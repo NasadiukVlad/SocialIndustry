@@ -62,6 +62,9 @@ public class EditAppartmentController implements Initializable {
     @FXML
     private TextField searchInput = new TextField();
 
+    @FXML
+    private Button addItemButton = new Button();
+
     private DisplayController displayController = new DisplayController();
     private String editData = new String();
     private String dataArray[];
@@ -219,7 +222,7 @@ public class EditAppartmentController implements Initializable {
 */
     }
 
-    public void add() {
+    public void update() {
         Connection connection;
         try {
             connection = DBConnect.connect();
@@ -236,7 +239,20 @@ public class EditAppartmentController implements Initializable {
         }
         //SQL FOR SELECTING ALL OF CUSTOMER
 
-        //  data.add(appartmentNumberField.getText(), appartmentNumberField.getText(), addPriceField.getText(), addAreaField.getText(), addDeveloperCodeField.getText());
+        //  data.update(appartmentNumberField.getText(), appartmentNumberField.getText(), addPriceField.getText(), addAreaField.getText(), addDeveloperCodeField.getText());
+    }
+
+    public void addNewItem() {
+        Connection connection;
+        try {
+            connection = DBConnect.connect();
+            String SQL = "Insert INTO Appartment (Adress, Price, Adress, Appartment_number, Area, Developer_code) VALUES ('" + addAdressField.getText() + "','" + addPriceField.getText() + "','" + appartmentNumberField.getText() + "','" + addAreaField.getText() + "','" + addDeveloperCodeField.getText() + "');" ;
+
+            stmt = connection.createStatement();
+            stmt.executeUpdate(SQL);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 

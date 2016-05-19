@@ -62,6 +62,9 @@ public class EditWorkerController implements Initializable {
     @FXML
     private RadioButton searchByAppartmentRb = new RadioButton();
 
+    @FXML
+    private Button addItemButton = new Button();
+
     private DisplayController displayController = new DisplayController();
     private String editData = new String();
     private String dataArray[];
@@ -218,7 +221,7 @@ public class EditWorkerController implements Initializable {
 */
     }
 
-    public void add() {
+    public void update() {
         Connection connection;
         try {
             connection = DBConnect.connect();
@@ -235,7 +238,20 @@ public class EditWorkerController implements Initializable {
         }
         //SQL FOR SELECTING ALL OF CUSTOMER
 
-        //  data.add(addInitialsField.getText(), addSuccessfulDealsField.getText(), addExperienceField.getText(), addPasportField.getText(), addAppartmentCode.getText());
+        //  data.update(addInitialsField.getText(), addSuccessfulDealsField.getText(), addExperienceField.getText(), addPasportField.getText(), addAppartmentCode.getText());
+    }
+
+    public void addNewItem() {
+        Connection connection;
+        try {
+            connection = DBConnect.connect();
+            String SQL = "Insert INTO Manager(Initials, Experience, Successful_deals) VALUES ('" + addInitialsField.getText() + "','" + addExperienceField.getText() + "','" + addSuccessfulDealsField.getText() + "');" ;
+
+            stmt = connection.createStatement();
+            stmt.executeUpdate(SQL);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 }

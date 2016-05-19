@@ -22,24 +22,25 @@
         <RowConstraints />
     </rowConstraints>
     <children>
-        <AnchorPane prefHeight="638.0" prefWidth="975.0" GridPane.columnIndex="1">
+        <AnchorPane prefHeight="627.0" prefWidth="956.0" GridPane.columnIndex="1">
             <children>
                 <Label layoutX="75.0" layoutY="14.0" text="Автоматизована система управління відділом продажу ЖК &quot;Молодіжна ініціатива&quot;">
                     <font>
                         <Font size="15.0" />
                     </font></Label>
-                <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="507.0" prefWidth="642.0" />
-                <Button fx:id="toMenuButton" layoutX="771.0" layoutY="536.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
+                <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="507.0" prefWidth="716.0" />
+                <Button fx:id="toMenuButton" layoutX="809.0" layoutY="584.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
                 <TextField fx:id="addAdressField" layoutX="31.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Адреса" />
                 <TextField fx:id="addPriceField" layoutX="175.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Ціна" />
                 <TextField fx:id="appartmentNumberField" layoutX="320.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Номер квартири" />
                 <TextField fx:id="addAreaField" layoutX="471.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Квадратура" />
                 <TextField fx:id="addDeveloperCodeField" layoutX="619.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Код забудовника" />
-                <Button fx:id="addButton" layoutX="773.0" layoutY="584.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="90.0" text="Додати" />
-                <Button layoutX="771.0" layoutY="471.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
-                <TextField fx:id="searchInput" layoutX="785.0" layoutY="327.0" />
-                <Button fx:id="searchButton" onAction="#searchByAdress" layoutX="834.0" layoutY="386.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="90.0" text="Знайти" />
-                <Label layoutX="821.0" layoutY="283.0" text="Пошук по адресі" />
+                <Button fx:id="addButton" layoutX="809.0" layoutY="488.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="92.0" text="Зберегти" />
+                <Button layoutX="809.0" layoutY="448.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="92.0" text="Редагувати" />
+                <TextField fx:id="searchInput" layoutX="780.0" layoutY="277.0" />
+                <Button fx:id="searchButton" layoutX="810.0" layoutY="322.0" mnemonicParsing="false" onAction="#searchByAdress" prefHeight="31.0" prefWidth="90.0" text="Знайти" />
+                <Label layoutX="808.0" layoutY="244.0" text="Пошук по адресі" />
+                <Button fx:id="addItemButton" onAction="#addNewItem" layoutX="809.0" layoutY="531.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Новий запис" />
             </children>
         </AnchorPane>
     </children>

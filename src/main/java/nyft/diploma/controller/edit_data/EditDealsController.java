@@ -62,6 +62,9 @@ public class EditDealsController implements Initializable {
     @FXML
     private RadioButton searchByAppartmentRb = new RadioButton();
 
+    @FXML
+    private Button addItemButton = new Button();
+
     private DisplayController displayController = new DisplayController();
     private String editData = new String();
     private String dataArray[];
@@ -134,7 +137,7 @@ public class EditDealsController implements Initializable {
         displayController.viewFXML(toMenuButton, "/fxml/mainMenu.fxml");
     }
 
-    public void searh() {
+    public void search() {
         if (searchByInitialsRb.isSelected()) {
             Connection c;
             String userPIB = clientName.getText();
@@ -220,7 +223,7 @@ public class EditDealsController implements Initializable {
 */
     }
 
-    public void add() {
+    public void update() {
         Connection connection;
         try {
             connection = DBConnect.connect();
@@ -237,7 +240,20 @@ public class EditDealsController implements Initializable {
         }
         //SQL FOR SELECTING ALL OF CUSTOMER
 
-        //  data.add(addDealDateField.getText(), addPriceField.getText(), addPriceField.getText(), addClientCodeField.getText(), addAppartmentCode.getText());
+        //  data.update(addDealDateField.getText(), addPriceField.getText(), addPriceField.getText(), addClientCodeField.getText(), addAppartmentCode.getText());
+    }
+
+    public void addNewItem() {
+        Connection connection;
+        try {
+            connection = DBConnect.connect();
+            String SQL = "Insert INTO Deal (Deal_date, Adress, Price, Client_code, Appartment_code) VALUES ('" + addDealDateField.getText() + "','" + addAdressField.getText() + "','" + addPriceField.getText() + "','" + addClientCodeField.getText() + "','" + addAppartmentCode.getText() + "');" ;
+
+            stmt = connection.createStatement();
+            stmt.executeUpdate(SQL);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 }
