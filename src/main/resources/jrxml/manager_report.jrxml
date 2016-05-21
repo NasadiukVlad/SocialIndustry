@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e4b840f6-cd80-4c28-9be4-3ad823a99aae">
+    <property name="ireport.zoom" value="1.0"/>
+    <property name="ireport.x" value="0"/>
+    <property name="ireport.y" value="0"/>
+    <queryString>
+        <![CDATA[
+        SELECT Manager.Manager_code AS "managerCode",
+ Manager.Initials AS "Initials",
+Manager.Experience AS "Experience,
+Manager.Successful_deals AS "Successful deals,
+FROM Manager
+]]>
+
+    </queryString>
+    <field name="managerCode" class="java.lang.Long"/>
+    <field name="initials" class="java.lang.String"/>
+    <field name="experience" class="java.lang.String"/>
+    <field name="successfulDeals" class="java.lang.Long"/>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="129" splitType="Stretch">
+            <staticText>
+                <reportElement x="35" y="16" width="499" height="49" uuid="7d04b8f5-3628-4840-8da5-fab75decfbee"/>
+                <textElement textAlignment="Justified">
+                    <font size="24"/>
+                </textElement>
+                <text><![CDATA[               ЖК "Молодіжна ініціатива"]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="35" y="82" width="499" height="34" uuid="4540a7a2-220e-4ff7-9793-73ea0dd62118"/>
+                <textElement>
+                    <font size="24"/>
+                </textElement>
+                <text><![CDATA[                    Звіт по менеджерам]]></text>
+            </staticText>
+        </band>
+    </title>
+    <detail>
+        <band height="147" splitType="Stretch">
+            <textField>
+                <reportElement x="187" y="14" width="138" height="20" uuid="0fb903b7-fb68-4af2-ac7f-8b7d543e9b0f"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{managerCode}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="187" y="49" width="138" height="20" uuid="a261517c-51a6-4078-a5ea-bd59d5c5993e"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{initials}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="187" y="81" width="138" height="20" uuid="ef34b020-b1bb-45d1-a57d-a2fa47c3f729"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{experience}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="187" y="113" width="138" height="20" uuid="ea271e13-610d-4ae5-9332-c8f29c4d3fe1"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{successfulDeals}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="13" y="15" width="134" height="20" uuid="294a44bd-b06b-44e7-812e-befbd3e6c2ca"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <text><![CDATA[Код менеджера:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="13" y="49" width="134" height="20" uuid="c24d9af9-01dd-40ea-a446-1a374b62993f"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <text><![CDATA[Ініціали:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="13" y="81" width="134" height="20" uuid="495d1da9-0975-49b7-b02f-c2195eab85f3"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <text><![CDATA[Досвід:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="13" y="113" width="134" height="20" uuid="8c256038-8ac0-4a5d-bdec-3c82eedeb8d5"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <text><![CDATA[Успішні угоди:]]></text>
+            </staticText>
+            <image>
+                <reportElement x="406" y="28" width="118" height="105" uuid="3aae0dff-28a6-487f-8986-8aaf7a3a848e"/>
+                <imageExpression><![CDATA["C:\\Users\\Vlad\\IdeaProjects\\Diploma\\src\\main\\resources\\images\\user_roles.png"]]></imageExpression>
+            </image>
+            <line>
+                <reportElement x="0" y="144" width="555" height="3" uuid="f21bd4f3-7929-40ac-b7a6-0791d2446185"/>
+            </line>
+        </band>
+    </detail>
+    <summary>
+        <band height="42" splitType="Stretch"/>
+    </summary>
+</jasperReport>

@@ -227,7 +227,7 @@ public class TimeTrackingViewController implements Initializable {
         Connection connection;
         try {
             connection = DBConnect.connect();
-            String SQL = "UPDATE Manager SET Activity = '" + addActivityField.getText() + "', Person = '" + addPersonField.getText() + "', Date = '" + addDateField.getText() + "', Time_spent = '" + addTimeSpentField.getText() + "' WHERE Manager_code = '" + dataArray[0] + "'";
+            String SQL = "UPDATE Time_tracking SET Activity = '" + addActivityField.getText() + "', Person = '" + addPersonField.getText() + "', Date = '" + addDateField.getText() + "', Time_spent = '" + addTimeSpentField.getText() + "' WHERE Time_tracking_сode = '" + dataArray[0] + "'";
             //ResultSet
             // ResultSet rs = connection.createStatement().executeUpdate(SQL);
             /*PreparedStatement preparedStatement = connection.prepareStatement(SQL);

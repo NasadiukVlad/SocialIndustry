@@ -23,7 +23,7 @@ import java.util.ResourceBundle;
 /**
  * Created by Vladyslav.Nasadiuk on 17.05.2016.
  */
-public class EditAppartmentController implements Initializable {
+public class EditSaledAppartmentController implements Initializable {
     private ObservableList<ObservableList> data;
 
     @FXML
@@ -88,7 +88,7 @@ public class EditAppartmentController implements Initializable {
         try {
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "SELECT * from Appartment";
+            String SQL = "SELECT * from Saled_appartment";
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);
 
@@ -145,7 +145,7 @@ public class EditAppartmentController implements Initializable {
         try {
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "SELECT * from Appartment WHERE Adress = '" + appartmentAdress + "'";
+            String SQL = "SELECT * from Saled_appartment WHERE Adress = '" + appartmentAdress + "'";
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);
 
@@ -226,7 +226,7 @@ public class EditAppartmentController implements Initializable {
         Connection connection;
         try {
             connection = DBConnect.connect();
-            String SQL = "UPDATE Appartment SET Adress = '" + addAdressField.getText() + "', Price = '" + addPriceField.getText() + "', Appartment_number = '" + appartmentNumberField.getText() + "', Area = '" + addAreaField.getText() + "', Developer_code = '" + addDeveloperCodeField.getText() + "' WHERE Appartment_code = '" + dataArray[0] + "'";
+            String SQL = "UPDATE Saled_appartment SET Adress = '" + addAdressField.getText() + "', Price = '" + addPriceField.getText() + "', Appartment_number = '" + appartmentNumberField.getText() + "', Area = '" + addAreaField.getText() + "', Developer_code = '" + addDeveloperCodeField.getText() + "' WHERE Appartment_code = '" + dataArray[0] + "'";
             //ResultSet
             // ResultSet rs = connection.createStatement().executeUpdate(SQL);
             /*PreparedStatement preparedStatement = connection.prepareStatement(SQL);
@@ -246,7 +246,7 @@ public class EditAppartmentController implements Initializable {
         Connection connection;
         try {
             connection = DBConnect.connect();
-            String SQL = "Insert INTO Appartment (Adress, Price, Adress, Appartment_number, Area, Developer_code) VALUES ('" + addAdressField.getText() + "','" + addPriceField.getText() + "','" + appartmentNumberField.getText() + "','" + addAreaField.getText() + "','" + addDeveloperCodeField.getText() + "');" ;
+            String SQL = "Insert INTO Saled_appartment (Adress, Price, Adress, Appartment_number, Area, Developer_code) VALUES ('" + addAdressField.getText() + "','" + addPriceField.getText() + "','" + appartmentNumberField.getText() + "','" + addAreaField.getText() + "','" + addDeveloperCodeField.getText() + "');" ;
 
             stmt = connection.createStatement();
             stmt.executeUpdate(SQL);

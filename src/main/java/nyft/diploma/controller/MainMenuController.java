@@ -7,8 +7,22 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
+import net.sf.jasperreports.engine.design.JasperDesign;
+import net.sf.jasperreports.engine.export.JRXlsExporterParameter;
+import net.sf.jasperreports.engine.export.ooxml.JRXlsxExporter;
+import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import nyft.diploma.report.db.ManagerDataBeanMaker;
+import nyft.diploma.report.model.ManagerReport;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 /**
@@ -53,7 +67,7 @@ public class MainMenuController implements Initializable {
     }
 
     public void viewAppartment()  {
-        displayController.viewFXML(viewWorkerButton, "/fxml/freeAppartmentView.fxml" );
+        displayController.viewFXML(viewWorkerButton, "/fxml/saledAppartmentView.fxml");
     }
 
     public void viewDeals()  {
@@ -77,7 +91,7 @@ public class MainMenuController implements Initializable {
     }
 
     public void viewEditAppartmentTable() {
-        displayController.viewFXML(editAppartmentsTableButton, "/fxml/editAppartment.fxml" );
+        displayController.viewFXML(editAppartmentsTableButton, "/fxml/editSaledAppartment.fxml");
     }
 
     public void viewEditDealsTable() {
@@ -103,6 +117,36 @@ public class MainMenuController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void createManagerReport() throws Exception {
+        InputStream inputStream = null;
+        InputStream pin = null;
+        try {
+           /* inputStream = new FileInputStream("/jrxml/manager_report.jrxml");*/
+            java.net.URL url = this.getClass().getResource("/jrxml/manager_report.jrxml");
+            pin = new java.io.FileInputStream(url.getFile());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        ManagerDataBeanMaker managerDataBeanMaker = new ManagerDataBeanMaker();
+        ArrayList<ManagerReport> userRolesReports = managerDataBeanMaker.getDataBeanList();
+
+        JRBeanCollectionDataSource beanColDataSource = new JRBeanCollectionDataSource(userRolesReports);
+
+        Map parameters = new HashMap();
+
+        JasperDesign jasperDesign = JRXmlLoader.load(pin);
+        JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
+        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, beanColDataSource);
+        JasperExportManager.exportReportToPdfFile(jasperPrint, "test_jasper.pdf");
+        JasperExportManager.exportReportToHtmlFile(jasperPrint, "test_jasper.html");
+        JRXlsxExporter exporter = new JRXlsxExporter();
+        exporter.setParameter(JRXlsExporterParameter.JASPER_PRINT, jasperPrint);
+        exporter.setParameter(JRXlsExporterParameter.OUTPUT_FILE_NAME, "test_jasper.xlsx");
+        exporter.exportReport();
+
     }
 
     public void initialize(URL location, ResourceBundle resources) {

@@ -27,7 +27,7 @@ import java.util.ResourceBundle;
 /**
  * Created by Vlad on 14.05.2016.
  */
-public class FreeAppartmentViewController implements Initializable {
+public class SaledAppartmentViewController implements Initializable {
     private ObservableList<ObservableList> data;
 
     @FXML
@@ -51,7 +51,7 @@ public class FreeAppartmentViewController implements Initializable {
         try{
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "SELECT * from Appartment";
+            String SQL = "SELECT * from Saled_appartment";
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);
 
@@ -103,7 +103,7 @@ public class FreeAppartmentViewController implements Initializable {
         try {
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "SELECT * from Appartment WHERE Adress = '" + appartmentAdress + "'";
+            String SQL = "SELECT * from Saled_appartment WHERE Adress = '" + appartmentAdress + "'";
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);
 
