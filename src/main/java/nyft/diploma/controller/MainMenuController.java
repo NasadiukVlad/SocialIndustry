@@ -13,8 +13,12 @@ import net.sf.jasperreports.engine.design.JasperDesign;
 import net.sf.jasperreports.engine.export.JRXlsExporterParameter;
 import net.sf.jasperreports.engine.export.ooxml.JRXlsxExporter;
 import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import nyft.diploma.report.db.ClientDataBeanMaker;
 import nyft.diploma.report.db.ManagerDataBeanMaker;
+import nyft.diploma.report.db.SaledAppartmentDataBeanMaker;
+import nyft.diploma.report.model.ClientReport;
 import nyft.diploma.report.model.ManagerReport;
+import nyft.diploma.report.model.SaledAppartmentReport;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -140,13 +144,74 @@ public class MainMenuController implements Initializable {
         JasperDesign jasperDesign = JRXmlLoader.load(pin);
         JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, beanColDataSource);
-        JasperExportManager.exportReportToPdfFile(jasperPrint, "test_jasper.pdf");
-        JasperExportManager.exportReportToHtmlFile(jasperPrint, "test_jasper.html");
+        JasperExportManager.exportReportToPdfFile(jasperPrint, "manager_report.pdf");
+        JasperExportManager.exportReportToHtmlFile(jasperPrint, "manager_report.html");
         JRXlsxExporter exporter = new JRXlsxExporter();
         exporter.setParameter(JRXlsExporterParameter.JASPER_PRINT, jasperPrint);
-        exporter.setParameter(JRXlsExporterParameter.OUTPUT_FILE_NAME, "test_jasper.xlsx");
+        exporter.setParameter(JRXlsExporterParameter.OUTPUT_FILE_NAME, "manager_report.xlsx");
         exporter.exportReport();
+        System.out.println("Completed");
 
+    }
+
+    public void createSaledAppartmentReport() throws Exception {
+        InputStream inputStream = null;
+        InputStream pin = null;
+        try {
+           /* inputStream = new FileInputStream("/jrxml/manager_report.jrxml");*/
+            java.net.URL url = this.getClass().getResource("/jrxml/saled_appartment_report.jrxml");
+            pin = new java.io.FileInputStream(url.getFile());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        SaledAppartmentDataBeanMaker saledAppartmentDataBeanMaker = new SaledAppartmentDataBeanMaker();
+        ArrayList<SaledAppartmentReport> userRolesReports = saledAppartmentDataBeanMaker.getDataBeanList();
+
+        JRBeanCollectionDataSource beanColDataSource = new JRBeanCollectionDataSource(userRolesReports);
+
+        Map parameters = new HashMap();
+
+        JasperDesign jasperDesign = JRXmlLoader.load(pin);
+        JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
+        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, beanColDataSource);
+        JasperExportManager.exportReportToPdfFile(jasperPrint, "saled_appartment_report.pdf");
+        JasperExportManager.exportReportToHtmlFile(jasperPrint, "saled_appartment_report.html");
+        JRXlsxExporter exporter = new JRXlsxExporter();
+        exporter.setParameter(JRXlsExporterParameter.JASPER_PRINT, jasperPrint);
+        exporter.setParameter(JRXlsExporterParameter.OUTPUT_FILE_NAME, "saled_appartment_report.xlsx");
+        exporter.exportReport();
+        System.out.println("Completed");
+    }
+
+    public void createClientReport() throws Exception {
+        InputStream inputStream = null;
+        InputStream pin = null;
+        try {
+           /* inputStream = new FileInputStream("/jrxml/manager_report.jrxml");*/
+            java.net.URL url = this.getClass().getResource("/jrxml/client_report.jrxml");
+            pin = new java.io.FileInputStream(url.getFile());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        ClientDataBeanMaker clientDataBeanMaker = new ClientDataBeanMaker();
+        ArrayList<ClientReport> userRolesReports = clientDataBeanMaker.getDataBeanList();
+
+        JRBeanCollectionDataSource beanColDataSource = new JRBeanCollectionDataSource(userRolesReports);
+
+        Map parameters = new HashMap();
+
+        JasperDesign jasperDesign = JRXmlLoader.load(pin);
+        JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
+        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, beanColDataSource);
+        JasperExportManager.exportReportToPdfFile(jasperPrint, "client_report.pdf");
+        JasperExportManager.exportReportToHtmlFile(jasperPrint, "client_report.html");
+        JRXlsxExporter exporter = new JRXlsxExporter();
+        exporter.setParameter(JRXlsExporterParameter.JASPER_PRINT, jasperPrint);
+        exporter.setParameter(JRXlsExporterParameter.OUTPUT_FILE_NAME, "client_report.xlsx");
+        exporter.exportReport();
+        System.out.println("Completed");
     }
 
     public void initialize(URL location, ResourceBundle resources) {

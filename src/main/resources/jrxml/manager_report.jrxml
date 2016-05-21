@@ -7,8 +7,8 @@
         <![CDATA[
         SELECT Manager.Manager_code AS "managerCode",
  Manager.Initials AS "Initials",
-Manager.Experience AS "Experience,
-Manager.Successful_deals AS "Successful deals,
+Manager.Experience AS "Experience",
+Manager.Successful_deals AS "Successful deals",
 FROM Manager
 ]]>
 
