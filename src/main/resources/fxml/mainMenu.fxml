@@ -52,7 +52,7 @@
             <Button onAction="#createClientReport" layoutX="48.0" layoutY="338.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База клієнтів" />
             <Button onAction="#createManagerReport" layoutX="48.0" layoutY="381.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База працівників" />
             <Button onAction="#createSaledAppartmentReport" layoutX="46.0" layoutY="424.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Продані квартири" />
-            <Button layoutX="45.0" layoutY="467.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База угод" />
+            <Button onAction="#createDealReport" layoutX="45.0" layoutY="467.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="База угод" />
             <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="200.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
                 <image>
                     <Image url="@../images/report.png" />
@@ -73,9 +73,9 @@
                   <Image url="@../images/main_info_logo.png" />
                </image>
             </ImageView>
-            <Button layoutX="37.0" layoutY="253.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Вільні квартири" />
-            <Button layoutX="46.0" layoutY="504.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Вільні квартири" />
-            <Button layoutX="691.0" layoutY="253.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Вільні квартири" />
+            <Button onAction="#viewFreeAppartment" layoutX="37.0" layoutY="253.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Вільні квартири" />
+            <Button onAction="#createFreeAppartmentReport" layoutX="46.0" layoutY="504.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Вільні квартири" />
+            <Button onAction="#viewEditFreeAppartment" layoutX="691.0" layoutY="253.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" text="Вільні квартири" />
 
         </children>
     </AnchorPane>

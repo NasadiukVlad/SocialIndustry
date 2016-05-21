@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report5" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="71b87f55-c137-47db-83cf-ee9c9126eb5d">
+    <property name="ireport.zoom" value="1.0"/>
+    <property name="ireport.x" value="0"/>
+    <property name="ireport.y" value="0"/>
+    <queryString>
+        <![CDATA[
+         SELECT Deal.Deal_code AS "Deal code",
+        Deal.Deal_date AS "Deal date",
+        Deal.Adress AS "Adress",
+        Deal.Price AS "Price",
+        Deal.Client_code AS "Client code",
+        Deal.Appartment_code AS "Appartment code",
+        FROM Deal
+        ]]>
+    </queryString>
+    <field name="dealCode" class="java.lang.Long"/>
+    <field name="dealDate" class="java.lang.String"/>
+    <field name="adress" class="java.lang.String"/>
+    <field name="price" class="java.lang.String"/>
+    <field name="clientCode" class="java.lang.Long"/>
+    <field name="appartmentCode" class="java.lang.Long"/>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="122" splitType="Stretch">
+            <staticText>
+                <reportElement x="28" y="68" width="499" height="34" uuid="64855068-ed48-4b84-a54c-658e489171c3"/>
+                <textElement>
+                    <font size="24"/>
+                </textElement>
+                <text><![CDATA[              Звіт по проданим квартирам]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="28" y="7" width="499" height="49" uuid="2ec9c4d5-42b3-4c34-a86a-e3007a09ded6"/>
+                <textElement textAlignment="Justified">
+                    <font size="24"/>
+                </textElement>
+                <text><![CDATA[               ЖК "Молодіжна ініціатива"]]></text>
+            </staticText>
+        </band>
+    </title>
+    <detail>
+        <band height="224" splitType="Stretch">
+            <staticText>
+                <reportElement x="28" y="15" width="133" height="20" uuid="82c23cd7-41a6-4ed6-8777-f65ee8f058a6"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <text><![CDATA[Код угоди:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="205" y="15" width="153" height="20" uuid="2a8258c4-6257-4935-a516-dfe12790c6e4"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{dealCode}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="28" y="45" width="133" height="20" uuid="7a21c1bf-91a9-4244-8a20-d9747f515260"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <text><![CDATA[Дата угоди:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="205" y="45" width="153" height="20" uuid="49bb59cb-6347-4184-8384-3642ccc6bbd3"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{dealDate}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="28" y="75" width="133" height="20" uuid="0a106d5b-8247-47ef-aab8-301cb65f0143"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <text><![CDATA[Адреса:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="205" y="75" width="153" height="20" uuid="7e1daf1c-cdb7-4d11-945b-5fe48d2408d2"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{adress}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="28" y="105" width="133" height="20" uuid="4182c537-e270-49e9-9e69-c71050fcdd29"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <text><![CDATA[Ціна:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="205" y="105" width="153" height="20" uuid="9b17605a-d55c-4224-a3ab-a37fb033d97f"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="28" y="135" width="133" height="20" uuid="851db26e-89fd-4eca-b9cf-6c3f4ee98b02"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <text><![CDATA[Код клієнта:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="205" y="135" width="153" height="20" uuid="9f2bace8-b4ab-45e8-9779-fdabe250d712"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{clientCode}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="28" y="165" width="133" height="20" uuid="d81fe617-4c3d-4c0f-b55b-7a982e750aad"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <text><![CDATA[Код квартири:]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="205" y="165" width="153" height="20" uuid="bffe14c5-48f9-4911-a5bc-a5618f2e393f"/>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{appartmentCode}]]></textFieldExpression>
+            </textField>
+            <line>
+                <reportElement x="0" y="207" width="555" height="3" uuid="20862331-a840-4479-9bbf-ddc531c9cc04"/>
+            </line>
+            <image>
+                <reportElement x="387" y="45" width="140" height="97" uuid="0e463eb2-86d7-4161-bafd-5a8bf27a8ca3"/>
+                <imageExpression><![CDATA["C:\\Users\\Vlad\\IdeaProjects\\Diploma\\src\\main\\resources\\images\\logo.jpg"]]></imageExpression>
+            </image>
+        </band>
+    </detail>
+    <summary>
+        <band height="42" splitType="Stretch"/>
+    </summary>
+</jasperReport>
