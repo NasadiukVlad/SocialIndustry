@@ -22,23 +22,23 @@
         <RowConstraints />
     </rowConstraints>
     <children>
-        <AnchorPane prefHeight="635.0" prefWidth="924.0" GridPane.columnIndex="1">
+        <AnchorPane prefHeight="619.0" prefWidth="784.0" GridPane.columnIndex="1">
             <children>
                 <Label layoutX="75.0" layoutY="14.0" text="Автоматизована система управління відділом продажу ЖК &quot;Молодіжна ініціатива&quot;">
                     <font>
                         <Font size="15.0" />
                     </font></Label>
-                <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="507.0" prefWidth="709.0" />
+                <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="507.0" prefWidth="555.0" />
 
 
-                <Button fx:id="toMenuButton" layoutX="766.0" layoutY="353.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="31.0" prefWidth="112.0" text="До меню" />
-                <TextField fx:id="addActivityField" layoutX="79.0" layoutY="588.0" prefHeight="31.0" prefWidth="138.0" promptText="Робітник" />
-                <TextField fx:id="addPersonField" layoutX="234.0" layoutY="588.0" prefHeight="31.0" prefWidth="138.0" promptText="Стаж роботи" />
-                <TextField fx:id="addDateField" layoutX="394.0" layoutY="587.0" prefHeight="31.0" prefWidth="138.0" promptText="Дата" />
-                <TextField fx:id="addTimeSpentField" layoutX="555.0" layoutY="587.0" prefHeight="31.0" prefWidth="138.0" promptText="Витрачено часу" />
-                <Button fx:id="addButton" layoutX="766.0" layoutY="257.0" mnemonicParsing="false" onAction="#update" prefHeight="31.0" prefWidth="112.0" text="Зберегти" />
-                <Button layoutX="767.0" layoutY="221.0" mnemonicParsing="false" onAction="#edit" prefHeight="31.0" prefWidth="112.0" text="Редагувати" />
-                <Button fx:id="addItemButton" layoutX="766.0" layoutY="294.0" mnemonicParsing="false" onAction="#addNewItem" prefHeight="31.0" prefWidth="112.0" text="Новий запис" />
+                <Button fx:id="toMenuButton" layoutX="637.0" layoutY="360.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="31.0" prefWidth="112.0" text="До меню" />
+                <TextField fx:id="addActivityField" layoutX="8.0" layoutY="590.0" prefHeight="31.0" prefWidth="138.0" promptText="Діяльність" />
+                <TextField fx:id="addPersonField" layoutX="163.0" layoutY="590.0" prefHeight="31.0" prefWidth="138.0" promptText="Робітник" />
+                <TextField fx:id="addDateField" layoutX="323.0" layoutY="589.0" prefHeight="31.0" prefWidth="138.0" promptText="Дата" />
+                <TextField fx:id="addTimeSpentField" layoutX="484.0" layoutY="589.0" prefHeight="31.0" prefWidth="138.0" promptText="Витрачено часу" />
+                <Button fx:id="addButton" layoutX="637.0" layoutY="264.0" mnemonicParsing="false" onAction="#update" prefHeight="31.0" prefWidth="112.0" text="Зберегти" />
+                <Button layoutX="638.0" layoutY="228.0" mnemonicParsing="false" onAction="#edit" prefHeight="31.0" prefWidth="112.0" text="Редагувати" />
+                <Button fx:id="addItemButton" layoutX="637.0" layoutY="301.0" mnemonicParsing="false" onAction="#addNewItem" prefHeight="31.0" prefWidth="112.0" text="Новий запис" />
 
             </children>
         </AnchorPane>

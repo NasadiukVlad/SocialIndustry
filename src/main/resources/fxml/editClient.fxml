@@ -22,28 +22,28 @@
         <RowConstraints />
     </rowConstraints>
     <children>
-        <AnchorPane prefHeight="632.0" prefWidth="1014.0" GridPane.columnIndex="1">
+        <AnchorPane prefHeight="632.0" prefWidth="939.0" GridPane.columnIndex="1">
             <children>
                 <Label layoutX="75.0" layoutY="14.0" text="Автоматизована система управління відділом продажу ЖК &quot;Молодіжна ініціатива&quot;">
                     <font>
                         <Font size="15.0" />
                     </font></Label>
-                <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="507.0" prefWidth="710.0" />
-                <Label layoutX="774.0" layoutY="141.0" text="Оберіть потрібний фільтр" />
-                <Button layoutX="825.0" layoutY="347.0" mnemonicParsing="false" onAction="#selectSearch" prefHeight="25.0" prefWidth="90.0" text="Знайти" />
-                <TextField fx:id="clientName" layoutX="776.0" layoutY="302.0" />
-                <Button fx:id="toMenuButton" layoutX="816.0" layoutY="584.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="31.0" prefWidth="109.0" text="До меню" />
-                <RadioButton fx:id="searchByInitialsRb" layoutX="774.0" layoutY="179.0" mnemonicParsing="false" text="Пошук за ПІБ" />
-                <RadioButton fx:id="searchByAdressRb" layoutX="774.0" layoutY="218.0" mnemonicParsing="false" text="Пошук за адресою" />
-                <RadioButton fx:id="searchByAppartmentRb" layoutX="774.0" layoutY="257.0" mnemonicParsing="false" text="Пошук за квартирою" />
+                <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="507.0" prefWidth="685.0" />
+                <Label layoutX="769.0" layoutY="149.0" text="Оберіть потрібний фільтр" />
+                <Button layoutX="795.0" layoutY="350.0" mnemonicParsing="false" onAction="#selectSearch" prefHeight="25.0" prefWidth="90.0" text="Знайти" />
+                <TextField fx:id="clientName" layoutX="766.0" layoutY="304.0" />
+                <Button fx:id="toMenuButton" layoutX="786.0" layoutY="587.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="31.0" prefWidth="109.0" text="До меню" />
+                <RadioButton fx:id="searchByInitialsRb" layoutX="769.0" layoutY="187.0" mnemonicParsing="false" text="Пошук за ПІБ" />
+                <RadioButton fx:id="searchByAdressRb" layoutX="769.0" layoutY="226.0" mnemonicParsing="false" text="Пошук за адресою" />
+                <RadioButton fx:id="searchByAppartmentRb" layoutX="769.0" layoutY="265.0" mnemonicParsing="false" text="Пошук за квартирою" />
                 <TextField fx:id="addInitialsField" layoutX="31.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="ПІБ" />
                 <TextField fx:id="addMobileField" layoutX="175.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Телефон" />
                 <TextField fx:id="addAdressField" layoutX="320.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Адреса" />
                 <TextField fx:id="addPasportField" layoutX="471.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Серія_паспорта" />
                 <TextField fx:id="addAppartmentCode" layoutX="619.0" layoutY="584.0" prefHeight="25.0" prefWidth="125.0" promptText="Код квартири" />
-                <Button fx:id="addButton" layoutX="816.0" layoutY="460.0" mnemonicParsing="false" onAction="#update" prefHeight="31.0" prefWidth="109.0" text="Зберегти" />
-                <Button layoutX="816.0" layoutY="422.0" mnemonicParsing="false" onAction="#edit" prefHeight="31.0" prefWidth="109.0" text="Редагувати" />
-                <Button fx:id="addItemButton" layoutX="816.0" layoutY="499.0" mnemonicParsing="false" onAction="#addNewItem" prefHeight="31.0" prefWidth="109.0" text="Новий запис" />
+                <Button fx:id="addButton" layoutX="786.0" layoutY="463.0" mnemonicParsing="false" onAction="#update" prefHeight="31.0" prefWidth="109.0" text="Зберегти" />
+                <Button layoutX="786.0" layoutY="425.0" mnemonicParsing="false" onAction="#edit" prefHeight="31.0" prefWidth="109.0" text="Редагувати" />
+                <Button fx:id="addItemButton" layoutX="786.0" layoutY="502.0" mnemonicParsing="false" onAction="#addNewItem" prefHeight="31.0" prefWidth="109.0" text="Новий запис" />
 
             </children>
         </AnchorPane>

@@ -11,7 +11,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<GridPane alignment="center" hgap="10" prefHeight="658.0" prefWidth="861.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nyft.diploma.controller.view_data.FreeAppartmentViewController">
+<GridPane alignment="center" hgap="10" prefHeight="635.0" prefWidth="913.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nyft.diploma.controller.additional_information.ViewInfoController">
     <columnConstraints>
         <ColumnConstraints />
         <ColumnConstraints />
@@ -22,17 +22,19 @@
         <RowConstraints />
     </rowConstraints>
     <children>
-        <AnchorPane prefHeight="638.0" prefWidth="860.0" GridPane.columnIndex="1">
+        <AnchorPane prefHeight="619.0" prefWidth="784.0" GridPane.columnIndex="1">
             <children>
                 <Label layoutX="75.0" layoutY="14.0" text="Автоматизована система управління відділом продажу ЖК &quot;Молодіжна ініціатива&quot;">
                     <font>
                         <Font size="15.0" />
                     </font></Label>
-                <TableView fx:id="tableView" layoutX="31.0" layoutY="60.0" prefHeight="565.0" prefWidth="602.0" />
-                <Button fx:id="toMenuButton" layoutX="707.0" layoutY="512.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
-                <TextField fx:id="searchInput" layoutX="677.0" layoutY="302.0" />
-                <Button fx:id="searchButton" layoutX="707.0" layoutY="350.0" mnemonicParsing="false" onAction="#searchByAdress" prefHeight="31.0" prefWidth="90.0" text="Знайти" />
-                <Label layoutX="706.0" layoutY="258.0" text="Пошук по адресі" />
+
+                <Button fx:id="toMenuButton" layoutX="648.0" layoutY="564.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="31.0" prefWidth="112.0" text="До меню" />
+            <ImageView fitHeight="483.0" fitWidth="738.0" layoutX="22.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/view_info.jpg" />
+               </image>
+            </ImageView>
 
             </children>
         </AnchorPane>

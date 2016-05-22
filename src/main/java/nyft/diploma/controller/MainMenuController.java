@@ -13,6 +13,11 @@ import net.sf.jasperreports.engine.design.JasperDesign;
 import net.sf.jasperreports.engine.export.JRXlsExporterParameter;
 import net.sf.jasperreports.engine.export.ooxml.JRXlsxExporter;
 import net.sf.jasperreports.engine.xml.JRXmlLoader;
+import nyft.diploma.controller.additional_information.TechnicalSupportViewController;
+import nyft.diploma.controller.additional_information.TimeTrackingViewController;
+import nyft.diploma.controller.additional_information.UserInstructionViewController;
+import nyft.diploma.controller.edit_data.*;
+import nyft.diploma.controller.view_data.*;
 import nyft.diploma.report.db.*;
 import nyft.diploma.report.model.*;
 
@@ -54,60 +59,320 @@ public class MainMenuController implements Initializable {
     @FXML
     Button changeUserButton = new Button();
 
+    String userRole = new String();
+
+    public String getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
+    }
+
     private DisplayController displayController = new DisplayController();
 
 
 
     public void viewWorker()  {
-        displayController.viewFXML(viewWorkerButton, "/fxml/workerView.fxml" );
+        try {
+
+            Stage currentStage = (Stage) viewWorkerButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/workerView.fxml"));
+
+            Parent root1 = (Parent) fxmlLoader.load();
+
+           WorkerViewController controller = fxmlLoader.<WorkerViewController>getController();
+            controller.setUserRole(userRole);
+
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+     //   displayController.viewFXML(viewWorkerButton, "/fxml/workerView.fxml" );
     }
 
     public void viewClient() {
-        displayController.viewFXML(viewWorkerButton, "/fxml/clientView.fxml" );
+        try {
+
+            Stage currentStage = (Stage) viewWorkerButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/clientView.fxml"));
+
+            Parent root1 = (Parent) fxmlLoader.load();
+
+            ClientViewController controller = fxmlLoader.<ClientViewController>getController();
+            controller.setUserRole(userRole);
+
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+      //  displayController.viewFXML(viewWorkerButton, "/fxml/clientView.fxml" );
     }
 
     public void viewAppartment()  {
-        displayController.viewFXML(viewWorkerButton, "/fxml/saledAppartmentView.fxml");
+        try {
+
+            Stage currentStage = (Stage) viewWorkerButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/saledAppartmentView.fxml"));
+
+            Parent root1 = (Parent) fxmlLoader.load();
+
+            SaledAppartmentViewController controller = fxmlLoader.<SaledAppartmentViewController>getController();
+            controller.setUserRole(userRole);
+
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+   //     displayController.viewFXML(viewWorkerButton, "/fxml/saledAppartmentView.fxml");
     }
 
     public void viewDeals()  {
-        displayController.viewFXML(viewWorkerButton, "/fxml/dealView.fxml" );
+        try {
+
+            Stage currentStage = (Stage) viewWorkerButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/dealView.fxml"));
+
+            Parent root1 = (Parent) fxmlLoader.load();
+
+            DealsBaseViewController controller = fxmlLoader.<DealsBaseViewController>getController();
+            controller.setUserRole(userRole);
+
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+       // displayController.viewFXML(viewWorkerButton, "/fxml/dealView.fxml" );
     }
 
     public void viewUserInstruction() {
-        displayController.viewFXML(userInstructionButton, "/fxml/userInstructionView.fxml");
+            try {
+
+                Stage currentStage = (Stage) userInstructionButton.getScene().getWindow();
+                currentStage.close();
+
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/userInstructionView.fxml"));
+
+                Parent root1 = (Parent) fxmlLoader.load();
+
+                UserInstructionViewController controller = fxmlLoader.<UserInstructionViewController>getController();
+                controller.setUserRole(userRole);
+
+
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root1));
+                stage.show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+       // displayController.viewFXML(userInstructionButton, "/fxml/userInstructionView.fxml");
     }
 
     public void viewTechnicalSupport() {
-        displayController.viewFXML(technicalSupportButton, "/fxml/technicalSupportView.fxml" );
+        try {
+
+            Stage currentStage = (Stage) technicalSupportButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/technicalSupportView.fxml"));
+
+            Parent root1 = (Parent) fxmlLoader.load();
+
+            TechnicalSupportViewController controller = fxmlLoader.<TechnicalSupportViewController>getController();
+            controller.setUserRole(userRole);
+
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+  //      displayController.viewFXML(technicalSupportButton, "/fxml/technicalSupportView.fxml" );
     }
 
     public void viewEditUserTable() {
-        displayController.viewFXML(editUserTableButton, "/fxml/editClient.fxml" );
+        try {
+
+            Stage currentStage = (Stage) editUserTableButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/editClient.fxml"));
+
+            Parent root1 = (Parent) fxmlLoader.load();
+
+            EditClientController controller = fxmlLoader.<EditClientController>getController();
+            controller.setUserRole(userRole);
+
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+       // displayController.viewFXML(editUserTableButton, "/fxml/editClient.fxml" );
     }
 
     public void viewEditWorkerTable() {
-        displayController.viewFXML(editWorkersTableButton, "/fxml/editWorker.fxml" );
+        try {
+
+            Stage currentStage = (Stage) editWorkersTableButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/editWorker.fxml"));
+
+            Parent root1 = (Parent) fxmlLoader.load();
+
+            EditWorkerController controller = fxmlLoader.<EditWorkerController>getController();
+            controller.setUserRole(userRole);
+
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+  //      displayController.viewFXML(editWorkersTableButton, "/fxml/editWorker.fxml" );
     }
 
     public void viewEditAppartmentTable() {
-        displayController.viewFXML(editAppartmentsTableButton, "/fxml/editSaledAppartment.fxml");
+        try {
+
+            Stage currentStage = (Stage) editAppartmentsTableButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/editSaledAppartment.fxml"));
+
+            Parent root1 = (Parent) fxmlLoader.load();
+
+            EditSaledAppartmentController controller = fxmlLoader.<EditSaledAppartmentController>getController();
+            controller.setUserRole(userRole);
+
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+  //      displayController.viewFXML(editAppartmentsTableButton, "/fxml/editSaledAppartment.fxml");
     }
 
     public void viewEditDealsTable() {
-        displayController.viewFXML(editDealstTableButton, "/fxml/editDeals.fxml" );
+        try {
+
+            Stage currentStage = (Stage) editDealstTableButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/editDeals.fxml"));
+
+            Parent root1 = (Parent) fxmlLoader.load();
+
+            EditDealsController controller = fxmlLoader.<EditDealsController>getController();
+            controller.setUserRole(userRole);
+
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+      //  displayController.viewFXML(editDealstTableButton, "/fxml/editDeals.fxml" );
     }
 
     public void viewTimeTrackingTable() {
-        displayController.viewFXML(editDealstTableButton, "/fxml/timeTracking.fxml" );
+        try {
+
+            Stage currentStage = (Stage) editDealstTableButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/timeTracking.fxml"));
+
+            Parent root1 = (Parent) fxmlLoader.load();
+
+            TimeTrackingViewController controller = fxmlLoader.<TimeTrackingViewController>getController();
+            controller.setUserRole(userRole);
+
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    //    displayController.viewFXML(editDealstTableButton, "/fxml/timeTracking.fxml" );
     }
 
     public void viewFreeAppartment() {
-        displayController.viewFXML(editDealstTableButton, "/fxml/freeAppartmentView.fxml" );
+
+
+        try {
+
+            Stage currentStage = (Stage) editDealstTableButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/freeAppartmentView.fxml"));
+
+            Parent root1 = (Parent) fxmlLoader.load();
+
+            FreeAppartmentViewController controller = fxmlLoader.<FreeAppartmentViewController>getController();
+            controller.setUserRole(userRole);
+
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+      //  displayController.viewFXML(editDealstTableButton, "/fxml/freeAppartmentView.fxml" );
     }
 
     public void viewEditFreeAppartment() {
-        displayController.viewFXML(editDealstTableButton, "/fxml/editFreeAppartment.fxml" );
+        try {
+
+            Stage currentStage = (Stage) editDealstTableButton.getScene().getWindow();
+            currentStage.close();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/editFreeAppartment.fxml"));
+
+            Parent root1 = (Parent) fxmlLoader.load();
+
+            EditFreeAppartmentController controller = fxmlLoader.<EditFreeAppartmentController>getController();
+            controller.setUserRole(userRole);
+
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+       // displayController.viewFXML(editDealstTableButton, "/fxml/editFreeAppartment.fxml" );
     }
 
 
@@ -282,27 +547,5 @@ public class MainMenuController implements Initializable {
 
     }
 
-    /**
-     * Created by Vladyslav.Nasadiuk on 16.05.2016.
-     */
-    public static class TechnicalSupportViewController {
-        @FXML
-        private Button toMenuButton = new Button();
 
-        public void goToMenu() {
-            try {
-
-                Stage currentStage = (Stage) toMenuButton.getScene().getWindow();
-                currentStage.close();
-
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/mainMenu.fxml"));
-                Parent root1 = (Parent) fxmlLoader.load();
-                Stage stage = new Stage();
-                stage.setScene(new Scene(root1));
-                stage.show();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-    }
 }

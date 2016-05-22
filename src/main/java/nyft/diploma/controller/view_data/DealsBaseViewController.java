@@ -105,7 +105,7 @@ public class DealsBaseViewController implements Initializable {
         try {
             c = DBConnect.connect();
             //SQL FOR SELECTING ALL OF CUSTOMER
-            String SQL = "SELECT * from Deals WHERE Client_adress = '" + clientAdress + "'";
+            String SQL = "SELECT * from Deal WHERE Adress = '" + clientAdress + "'";
             //ResultSet
             ResultSet rs = c.createStatement().executeQuery(SQL);
 
@@ -152,7 +152,18 @@ public class DealsBaseViewController implements Initializable {
         }
     }
 
-    public void goToMenu() {
-        displayController.viewFXML(toMenuButton, "/fxml/mainMenu.fxml");
+    String userRole = new String();
+
+    public String getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
+    }
+
+
+    public void goToMenu(){
+        displayController.viewMenuFXML(toMenuButton, userRole);
     }
 }

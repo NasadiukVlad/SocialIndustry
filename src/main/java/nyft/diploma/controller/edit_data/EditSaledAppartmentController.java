@@ -133,8 +133,19 @@ public class EditSaledAppartmentController implements Initializable {
         }
     }
 
-    public void goToMenu() {
-        displayController.viewFXML(toMenuButton, "/fxml/mainMenu.fxml");
+    String userRole = new String();
+
+    public String getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
+    }
+
+
+    public void goToMenu(){
+        displayController.viewMenuFXML(toMenuButton, userRole);
     }
 
     public void searchByAdress() {
@@ -205,14 +216,11 @@ public class EditSaledAppartmentController implements Initializable {
         /*String editData = (String) col.getCellObservableValue(tableView.getItems().get(row)).getValue();
         System.out.println(editData);*/
         editData = tableView.getSelectionModel().getSelectedItem().toString();
-        System.out.println(editData);
         char arr[] = editData.toCharArray();
         editData = editData.copyValueOf(arr, 1, arr.length - 2);
-        System.out.println(editData);
         dataArray = editData.split(",");
         System.out.println(Arrays.toString(dataArray));
-        System.out.println(dataArray[0] +"  "+ dataArray[1]);
-        appartmentNumberField.setText(dataArray[1]);
+        addAdressField.setText(dataArray[1]);
         addPriceField.setText(dataArray[2]);
         appartmentNumberField.setText(dataArray[3]);
         addAreaField.setText(dataArray[4]);
@@ -246,7 +254,7 @@ public class EditSaledAppartmentController implements Initializable {
         Connection connection;
         try {
             connection = DBConnect.connect();
-            String SQL = "Insert INTO Saled_appartment (Adress, Price, Adress, Appartment_number, Area, Developer_code) VALUES ('" + addAdressField.getText() + "','" + addPriceField.getText() + "','" + appartmentNumberField.getText() + "','" + addAreaField.getText() + "','" + addDeveloperCodeField.getText() + "');" ;
+            String SQL = "Insert INTO Saled_appartment (Adress, Price, Appartment_number, Area, Developer_code) VALUES ('" + addAdressField.getText() + "','" + addPriceField.getText() + "','" + appartmentNumberField.getText() + "','" + addAreaField.getText() + "','" + addDeveloperCodeField.getText() + "');" ;
 
             stmt = connection.createStatement();
             stmt.executeUpdate(SQL);

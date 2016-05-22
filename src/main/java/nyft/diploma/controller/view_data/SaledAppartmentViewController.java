@@ -151,7 +151,18 @@ public class SaledAppartmentViewController implements Initializable {
     }
 
 
-    public void goToMenu() {
-        displayController.viewFXML(toMenuButton, "/fxml/mainMenu.fxml");
+    String userRole = new String();
+
+    public String getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
+    }
+
+
+    public void goToMenu(){
+        displayController.viewMenuFXML(toMenuButton, userRole);
     }
 }

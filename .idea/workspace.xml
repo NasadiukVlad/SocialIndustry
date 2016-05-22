@@ -7,20 +7,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditFreeAppartmentController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/FreeAppartmentViewController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/report/db/DealDataBeanMaker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/report/db/FreeApparmentDataBeanMaker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/report/model/DealReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/report/model/FreeApparmentReport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editFreeAppartment.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/freeAppartmentView.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/jrxml/deal_report.jrxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/jrxml/free_apparment_report.jrxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/EditInfoController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/ViewInfoController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editInfo.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/mainMenuAccountant.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/mainMenuTrainee.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/fxml/viewInfo.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nyft/diploma/controller/AuthorizationController.class" afterPath="$PROJECT_DIR$/target/classes/nyft/diploma/controller/AuthorizationController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/nyft/diploma/controller/MainMenuController.class" afterPath="$PROJECT_DIR$/target/classes/nyft/diploma/controller/MainMenuController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/AuthorizationController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/AuthorizationController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/DisplayController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/DisplayController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/MainMenuController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/MainMenuController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TechnicalSupportViewController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TechnicalSupportViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TimeTrackingViewController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TimeTrackingViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/UserInstructionViewController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/UserInstructionViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditClientController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditClientController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditDealsController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditDealsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditFreeAppartmentController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditFreeAppartmentController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditSaledAppartmentController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditSaledAppartmentController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditWorkerController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditWorkerController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/info_data/InfoAuthorizationController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/info_data/InfoAuthorizationController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/info_data/InfoTechnicalSupportController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/info_data/InfoTechnicalSupportController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/ClientViewController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/ClientViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/DealsBaseViewController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/DealsBaseViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/FreeAppartmentViewController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/FreeAppartmentViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/SaledAppartmentViewController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/SaledAppartmentViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/WorkerViewController.java" afterPath="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/WorkerViewController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/authorization.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/authorization.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/dealView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/dealView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/editClient.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editClient.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/editDeals.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editDeals.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/editFreeAppartment.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editFreeAppartment.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/editSaledAppartment.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editSaledAppartment.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/editWorker.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editWorker.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/freeAppartmentView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/freeAppartmentView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/mainMenu.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/mainMenu.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/saledAppartmentView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/saledAppartmentView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/timeTracking.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/timeTracking.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/userInstructionView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/userInstructionView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/fxml/workerView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/fxml/workerView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/fxml/authorization.fxml" afterPath="$PROJECT_DIR$/target/classes/fxml/authorization.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/fxml/mainMenu.fxml" afterPath="$PROJECT_DIR$/target/classes/fxml/mainMenu.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -83,11 +110,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mainMenu.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainMenu.fxml">
+      <file leaf-file-name="MainMenuController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/MainMenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8545456">
-              <caret line="76" column="57" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+            <state vertical-scroll-proportion="-0.8965517">
+              <caret line="168" column="8" selection-start-line="168" selection-start-column="8" selection-end-line="186" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2450#2472#0" expanded="true" />
+                <element signature="e#3190#3212#0" expanded="true" />
+                <element signature="e#3953#3984#0" expanded="true" />
+                <element signature="e#4711#4736#0" expanded="true" />
+                <element signature="e#5508#5539#0" expanded="true" />
+                <element signature="e#6335#6367#0" expanded="true" />
+                <element signature="e#7111#7133#0" expanded="true" />
+                <element signature="e#7869#7891#0" expanded="true" />
+                <element signature="e#8656#8687#0" expanded="true" />
+                <element signature="e#9434#9455#0" expanded="true" />
+                <element signature="e#10201#10229#0" expanded="true" />
+                <element signature="e#10985#11015#0" expanded="true" />
+                <element signature="e#11779#11809#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InfoAuthorizationController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/info_data/InfoAuthorizationController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="9" selection-start-line="39" selection-start-column="7" selection-end-line="57" selection-end-column="9" />
+              <folding>
+                <element signature="e#786#787#0" expanded="true" />
+                <element signature="e#826#827#0" expanded="true" />
+                <element signature="e#856#857#0" expanded="true" />
+                <element signature="e#926#927#0" expanded="true" />
+                <element signature="e#1326#1357#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInstructionViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/UserInstructionViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="123" column="54" selection-start-line="123" selection-start-column="54" selection-end-line="123" selection-end-column="54" />
+              <folding>
+                <element signature="e#1692#1721#0" expanded="true" />
+                <element signature="e#2502#2534#0" expanded="true" />
+                <element signature="e#3174#3194#0" expanded="true" />
+                <element signature="e#3924#3944#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewInfo.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/viewInfo.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.418182">
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -96,70 +179,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="free_apparment_report.jrxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/jrxml/free_apparment_report.jrxml">
+      <file leaf-file-name="ViewInfoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/ViewInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.290909">
-              <caret line="43" column="47" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FreeApparmentDataBeanMaker.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/report/db/FreeApparmentDataBeanMaker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4548495">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1463867731692" expanded="true" signature="688:1183" placeholder="SELECT Free_... Free_Appartment" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FreeApparmentReport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/report/model/FreeApparmentReport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SaledAppartmentReport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/report/model/SaledAppartmentReport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="68" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SaledAppartmentDataBeanMaker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/report/db/SaledAppartmentDataBeanMaker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="5" selection-start-line="17" selection-start-column="3" selection-end-line="42" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1463858343660" expanded="true" signature="689:1053" placeholder="SELECT Saled... " />
-                <marker date="1463858343660" expanded="true" signature="689:1191" placeholder="SELECT Saled... Saled_appartment" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainMenuController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/MainMenuController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="201" column="61" selection-start-line="201" selection-start-column="61" selection-end-line="201" selection-end-column="61" />
-              <folding>
-                <element signature="method#viewEditAppartmentTable#0;class#MainMenuController#0" expanded="false" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#668#669#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,8 +196,8 @@
       <file leaf-file-name="freeAppartmentView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/freeAppartmentView.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.3090909">
-              <caret line="13" column="197" selection-start-line="13" selection-start-column="197" selection-end-line="13" selection-end-column="197" />
+            <state vertical-scroll-proportion="3.709091">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -178,28 +206,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditFreeAppartmentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditFreeAppartmentController.java">
+      <file leaf-file-name="TechnicalSupportViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TechnicalSupportViewController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="248" column="53" selection-start-line="248" selection-start-column="53" selection-end-line="248" selection-end-column="53" />
+              <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1463866908436" expanded="true" signature="2467:2496" placeholder="SELECT * fro... Saled_appartment" />
-                <marker date="1463866908436" expanded="true" signature="4714:4785" placeholder="SELECT * fro... Saled_appartment" />
-                <marker date="1463866908436" expanded="true" signature="8173:8497" placeholder="UPDATE Free_... " />
-                <marker date="1463866908436" expanded="true" signature="9276:9563" placeholder="Insert INTO Saled_appartment... " />
+                <element signature="e#3044#3045#0" expanded="true" />
+                <element signature="e#3075#3076#0" expanded="true" />
+                <element signature="e#3193#3194#0" expanded="true" />
+                <element signature="e#3263#3264#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="saled_appartment_report.jrxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/jrxml/saled_appartment_report.jrxml">
+      <file leaf-file-name="InfoTechnicalSupportController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/info_data/InfoTechnicalSupportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.153846">
-              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-              <folding />
+            <state vertical-scroll-proportion="0.85785955">
+              <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+              <folding>
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#929#930#0" expanded="true" />
+                <element signature="e#1329#1360#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/ClientViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="150" column="5" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+              <folding>
+                <element signature="e#4435#4436#0" expanded="true" />
+                <element signature="e#4466#4467#0" expanded="true" />
+                <element signature="e#4514#4515#0" expanded="true" />
+                <element signature="e#4554#4555#0" expanded="true" />
+                <element signature="e#4584#4585#0" expanded="true" />
+                <element signature="e#4654#4655#0" expanded="true" />
+                <marker date="1463923220354" expanded="true" signature="2529:2549" placeholder="SELECT * fro... Client" />
+                <marker date="1463923220354" expanded="true" signature="5010:5065" placeholder="SELECT * fro... Client" />
+                <marker date="1463923220354" expanded="true" signature="7515:7581" placeholder="SELECT * fro... Client" />
+                <marker date="1463923220354" expanded="true" signature="10039:10114" placeholder="SELECT * fro... Client" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkerViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/WorkerViewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding>
+                <element signature="e#2228#2547#0" expanded="true" />
+                <element signature="e#2546#2547#0" expanded="true" />
+                <element signature="e#5997#5998#0" expanded="true" />
+                <element signature="e#6028#6029#0" expanded="true" />
+                <element signature="e#6076#6077#0" expanded="true" />
+                <element signature="e#6116#6117#0" expanded="true" />
+                <element signature="e#6146#6147#0" expanded="true" />
+                <element signature="e#6216#6217#0" expanded="true" />
+                <marker date="1463923220670" expanded="true" signature="1663:1684" placeholder="SELECT * fro... Manager" />
+                <marker date="1463923220670" expanded="true" signature="3772:3836" placeholder="SELECT * fro... Manager" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -230,32 +303,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/TechnicalSupportViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/authorizationInfo.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/infoAuthorization.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/info_data/InfoAuthorizationController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/technicalSupportView.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TechnicalSupportViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/info_data/InfoTechnicalSupportController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/infoTechnicalSupport.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/UserInstructionViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/userInstructionView.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/clientView.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/WorkerViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/workerView.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/dealView.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/DealsBaseViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/ClientViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditClientController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditDealsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditWorkerController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/editAppartment.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/editClient.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/editDeals.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/editWorker.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/timeTracking.fxml.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/timeTracking.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TimeTrackingViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditAppartmentController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/manager_report.jrxml" />
         <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/report/db/ManagerDataBeanMaker.java" />
@@ -271,16 +321,39 @@
         <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/report/model/DealReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/report/db/DealDataBeanMaker.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jrxml/deal_report.jrxml" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/FreeAppartmentViewController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/freeAppartmentView.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditSaledAppartmentController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/editFreeAppartment.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditFreeAppartmentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/report/model/FreeApparmentReport.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/mainMenu.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/MainMenuController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/report/db/FreeApparmentDataBeanMaker.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jrxml/free_apparment_report.jrxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/workerView.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/viewInfo.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/editInfo.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/userInstructionView.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/mainMenuTrainee.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/authorization.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/mainMenuAccountant.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/AuthorizationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/DisplayController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/EditInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TimeTrackingViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditClientController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditDealsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditFreeAppartmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditSaledAppartmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditWorkerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/ClientViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/DealsBaseViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/FreeAppartmentViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/SaledAppartmentViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/WorkerViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TechnicalSupportViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/MainMenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/info_data/InfoAuthorizationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/ViewInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/UserInstructionViewController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nyft/diploma/controller/info_data/InfoTechnicalSupportController.java" />
       </list>
     </option>
   </component>
@@ -389,82 +462,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Diploma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Diploma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generated-sources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Diploma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Diploma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Diploma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Diploma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jrxml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Diploma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Diploma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -555,45 +552,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Diploma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Diploma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diploma" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -624,6 +583,112 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="info_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edit_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diploma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="additional_information" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -664,6 +729,7 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vlad\IdeaProjects\Diploma\src\main\resources\fxml" />
       <recent name="C:\Users\Vlad\IdeaProjects\Diploma" />
     </key>
   </component>
@@ -1194,7 +1260,7 @@
       <workItem from="1463511925304" duration="591000" />
       <workItem from="1463516617829" duration="2489000" />
       <workItem from="1463680163333" duration="5277000" />
-      <workItem from="1463830783373" duration="24933000" />
+      <workItem from="1463830783373" duration="43789000" />
     </task>
     <task id="LOCAL-00001" summary="add views and ui detals">
       <created>1463384993215</created>
@@ -1232,11 +1298,17 @@
       <option name="project" value="LOCAL" />
       <updated>1463860583800</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add all basic function">
+      <created>1463867845051</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1463867845051</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73730000" />
+    <option name="totallyTimeSpent" value="92586000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1259,14 +1331,14 @@
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24126984" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7028754" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819384" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58146966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25079367" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39603174" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32747602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1338,28 +1410,65 @@
     <MESSAGE value="add timeTracking" />
     <MESSAGE value="add manager jasper report" />
     <MESSAGE value="add saled appartment and client jasper report" />
-    <option name="LAST_COMMIT_MESSAGE" value="add saled appartment and client jasper report" />
+    <MESSAGE value="add all basic function" />
+    <option name="LAST_COMMIT_MESSAGE" value="add all basic function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/MainMenuController.java</url>
-          <line>85</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TimeTrackingViewController.java</url>
-          <line>235</line>
+          <line>247</line>
           <properties />
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditClientController.java</url>
+          <line>379</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditDealsController.java</url>
+          <line>246</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/UserInstructionViewController.java</url>
+          <line>4</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/UserInstructionViewController.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditFreeAppartmentController.java</url>
+          <line>147</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditSaledAppartmentController.java</url>
+          <line>147</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditWorkerController.java</url>
+          <line>147</line>
+          <properties />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="12" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1368,278 +1477,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/DealsBaseViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="85" selection-start-line="107" selection-start-column="85" selection-end-line="107" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/ClientViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workerView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="41" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/dealView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditClientController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="362" column="2" selection-start-line="362" selection-start-column="2" selection-end-line="373" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditDealsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="247" column="3" selection-start-line="247" selection-start-column="3" selection-end-line="256" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/editDeals.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="68" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/infoAuthorization.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/editClient.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="68" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditWorkerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="256" column="1" selection-start-line="26" selection-start-column="4" selection-end-line="256" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/UserInstructionViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/editWorker.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/timeTracking.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.163636">
-          <caret line="40" column="120" selection-start-line="40" selection-start-column="120" selection-end-line="40" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/javafx-src.zip!/javafx/scene/control/TextInputControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="347" column="35" selection-start-line="347" selection-start-column="35" selection-end-line="347" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1657" column="0" selection-start-line="1657" selection-start-column="0" selection-end-line="1657" selection-end-column="0" />
-          <folding>
-            <element signature="e#66933#66934#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/javafx-src.zip!/javafx/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/javafx-src.zip!/javafx/scene/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8411" column="0" selection-start-line="8411" selection-start-column="0" selection-end-line="8411" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/javafx-src.zip!/javafx/scene/control/Button.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TimeTrackingViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="242" column="0" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
-          <folding>
-            <element signature="e#4358#4359#0" expanded="false" />
-            <element signature="e#4437#4438#0" expanded="false" />
-            <marker date="1463681251502" expanded="true" signature="2487:2514" placeholder="SELECT * fro... Time_tracking" />
-            <marker date="1463681251502" expanded="true" signature="4733:4797" placeholder="SELECT * fro... Manager" />
-            <marker date="1463681251502" expanded="true" signature="8076:8336" placeholder="UPDATE Time_... " />
-            <marker date="1463681251502" expanded="true" signature="9117:9330" placeholder="Insert INTO Time_tracking... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/WorkerViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="153" column="36" selection-start-line="153" selection-start-column="36" selection-end-line="153" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2228#2547#0" expanded="false" />
-            <element signature="e#2546#2547#0" expanded="false" />
-            <element signature="e#4427#4789#0" expanded="false" />
-            <element signature="e#4788#4789#0" expanded="false" />
-            <element signature="e#5955#5956#0" expanded="false" />
-            <element signature="e#6034#6035#0" expanded="false" />
-            <marker date="1463600414177" expanded="true" signature="1663:1684" placeholder="SELECT * fro... Manager" />
-            <marker date="1463600414177" expanded="true" signature="3772:3836" placeholder="SELECT * fro... Manager" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/dao/DBConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.02341137">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11371238">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_jasper.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/javafx-src.zip!/com/sun/glass/ui/win/WinApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08695652">
-          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.12937063">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jrxml/manager_report.jrxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23840345">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/report/model/ManagerReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/report/db/ManagerDataBeanMaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1767,33 +1604,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/SaledAppartmentViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="45" selection-start-line="130" selection-start-column="45" selection-end-line="130" selection-end-column="45" />
-          <folding>
-            <element signature="e#5686#5687#0" expanded="true" />
-            <element signature="e#5765#5766#0" expanded="true" />
-            <marker date="1463834387943" expanded="true" signature="1538:1568" placeholder="SELECT * fro... Saled_appartment" />
-            <marker date="1463834387943" expanded="true" signature="3651:3723" placeholder="SELECT * fro... Saled_appartment" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/FreeAppartmentViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5570#5571#0" expanded="true" />
-            <element signature="e#5649#5650#0" expanded="true" />
-            <marker date="1463866293186" expanded="true" signature="1424:1453" placeholder="SELECT * fro... Free_appartment" />
-            <marker date="1463866293186" expanded="true" signature="3536:3607" placeholder="SELECT * fro... Free_appartment" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/editSaledAppartment.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.4">
@@ -1803,44 +1613,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditSaledAppartmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="255" column="5" selection-start-line="26" selection-start-column="4" selection-end-line="255" selection-end-column="5" />
-          <folding>
-            <marker date="1463834375965" expanded="true" signature="2482:2512" placeholder="SELECT * fro... Saled_appartment" />
-            <marker date="1463834375965" expanded="true" signature="4730:4802" placeholder="SELECT * fro... Saled_appartment" />
-            <marker date="1463834375965" expanded="true" signature="8190:8515" placeholder="UPDATE Saled... " />
-            <marker date="1463834375965" expanded="true" signature="9294:9582" placeholder="Insert INTO Saled_appartment... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/editFreeAppartment.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.018182">
-          <caret line="13" column="235" selection-start-line="13" selection-start-column="235" selection-end-line="13" selection-end-column="235" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditFreeAppartmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="248" column="53" selection-start-line="248" selection-start-column="53" selection-end-line="248" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1463866908436" expanded="true" signature="2467:2496" placeholder="SELECT * fro... Saled_appartment" />
-            <marker date="1463866908436" expanded="true" signature="4714:4785" placeholder="SELECT * fro... Saled_appartment" />
-            <marker date="1463866908436" expanded="true" signature="8173:8497" placeholder="UPDATE Free_... " />
-            <marker date="1463866908436" expanded="true" signature="9276:9563" placeholder="Insert INTO Saled_appartment... " />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/report/db/SaledAppartmentDataBeanMaker.java">
@@ -1863,38 +1635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/freeAppartmentView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3090909">
-          <caret line="13" column="197" selection-start-line="13" selection-start-column="197" selection-end-line="13" selection-end-column="197" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainMenu.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8545456">
-          <caret line="76" column="57" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/MainMenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="201" column="61" selection-start-line="201" selection-start-column="61" selection-end-line="201" selection-end-column="61" />
-          <folding>
-            <element signature="method#viewEditAppartmentTable#0;class#MainMenuController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/report/model/FreeApparmentReport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1905,7 +1645,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jrxml/saled_appartment_report.jrxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.153846">
+        <state vertical-scroll-proportion="0.506993">
           <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
           <folding />
         </state>
@@ -1921,11 +1661,519 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/report/db/FreeApparmentDataBeanMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4548495">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <marker date="1463867731692" expanded="true" signature="688:1183" placeholder="SELECT Free_... Free_Appartment" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainMenu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8545456">
+          <caret line="76" column="57" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/clientView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.181818">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workerView.fxml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.384615">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/dealView.fxml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.730769">
+          <caret line="32" column="13" selection-start-line="34" selection-start-column="51" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/editClient.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.018182">
+          <caret line="43" column="115" selection-start-line="43" selection-start-column="115" selection-end-line="43" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/editFreeAppartment.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3818183">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/timeTracking.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6363635">
+          <caret line="40" column="120" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/editWorker.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3090909">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/editInfo.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="13" column="237" selection-start-line="13" selection-start-column="237" selection-end-line="13" selection-end-column="237" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainMenuTrainee.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="15.763637">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/userInstructionView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.163636">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/authorization.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7818184">
+          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainMenuAccountant.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.709091">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/EditInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1463867731692" expanded="true" signature="688:1183" placeholder="SELECT Free_... Free_Appartment" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TimeTrackingViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="150" column="5" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+          <folding>
+            <element signature="e#4400#4401#0" expanded="true" />
+            <element signature="e#4431#4432#0" expanded="true" />
+            <element signature="e#4479#4480#0" expanded="true" />
+            <element signature="e#4519#4520#0" expanded="true" />
+            <element signature="e#4549#4550#0" expanded="true" />
+            <element signature="e#4619#4620#0" expanded="true" />
+            <marker date="1463923220710" expanded="true" signature="2487:2514" placeholder="SELECT * fro... Time_tracking" />
+            <marker date="1463923220710" expanded="true" signature="4915:4979" placeholder="SELECT * fro... Manager" />
+            <marker date="1463923220710" expanded="true" signature="8307:8567" placeholder="UPDATE Time_... " />
+            <marker date="1463923220710" expanded="true" signature="9348:9561" placeholder="Insert INTO Time_tracking... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="154" column="5" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
+          <folding>
+            <element signature="e#4526#4527#0" expanded="true" />
+            <element signature="e#4557#4558#0" expanded="true" />
+            <element signature="e#4605#4606#0" expanded="true" />
+            <element signature="e#4645#4646#0" expanded="true" />
+            <element signature="e#4675#4676#0" expanded="true" />
+            <element signature="e#4745#4746#0" expanded="true" />
+            <marker date="1463923220291" expanded="true" signature="2620:2640" placeholder="SELECT * fro... Client" />
+            <marker date="1463923220291" expanded="true" signature="5101:5156" placeholder="SELECT * fro... Client" />
+            <marker date="1463923220291" expanded="true" signature="7606:7672" placeholder="SELECT * fro... Client" />
+            <marker date="1463923220291" expanded="true" signature="10130:10205" placeholder="SELECT * fro... Client" />
+            <marker date="1463923220291" expanded="true" signature="13441:13757" placeholder="UPDATE Clien... " />
+            <marker date="1463923220291" expanded="true" signature="14260:14534" placeholder="Insert INTO Client... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditDealsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="148" column="5" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+          <folding>
+            <element signature="e#4372#4373#0" expanded="true" />
+            <element signature="e#4403#4404#0" expanded="true" />
+            <element signature="e#4451#4452#0" expanded="true" />
+            <element signature="e#4491#4492#0" expanded="true" />
+            <element signature="e#4521#4522#0" expanded="true" />
+            <element signature="e#4591#4592#0" expanded="true" />
+            <marker date="1463923220266" expanded="true" signature="2468:2486" placeholder="SELECT * fro... Deal" />
+            <marker date="1463923220266" expanded="true" signature="4942:4997" placeholder="SELECT * fro... Client" />
+            <marker date="1463923220266" expanded="true" signature="8537:8841" placeholder="UPDATE Deal " />
+            <marker date="1463923220266" expanded="true" signature="9609:9874" placeholder="Insert INTO Deal... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditFreeAppartmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="148" column="5" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4382#4383#0" expanded="true" />
+            <element signature="e#4413#4414#0" expanded="true" />
+            <element signature="e#4461#4462#0" expanded="true" />
+            <element signature="e#4501#4502#0" expanded="true" />
+            <element signature="e#4531#4532#0" expanded="true" />
+            <element signature="e#4601#4602#0" expanded="true" />
+            <marker date="1463923220404" expanded="true" signature="2467:2496" placeholder="SELECT * fro... Saled_appartment" />
+            <marker date="1463923220404" expanded="true" signature="4896:4967" placeholder="SELECT * fro... Saled_appartment" />
+            <marker date="1463923220404" expanded="true" signature="8210:8534" placeholder="UPDATE Free_... " />
+            <marker date="1463923220404" expanded="true" signature="9313:9592" placeholder="Insert INTO Saled_appartment... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditSaledAppartmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="148" column="5" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+          <folding>
+            <element signature="e#4398#4399#0" expanded="true" />
+            <element signature="e#4429#4430#0" expanded="true" />
+            <element signature="e#4477#4478#0" expanded="true" />
+            <element signature="e#4517#4518#0" expanded="true" />
+            <element signature="e#4547#4548#0" expanded="true" />
+            <element signature="e#4617#4618#0" expanded="true" />
+            <marker date="1463923220451" expanded="true" signature="2482:2512" placeholder="SELECT * fro... Saled_appartment" />
+            <marker date="1463923220451" expanded="true" signature="4912:4984" placeholder="SELECT * fro... Saled_appartment" />
+            <marker date="1463923220451" expanded="true" signature="8227:8552" placeholder="UPDATE Saled... " />
+            <marker date="1463923220451" expanded="true" signature="9331:9611" placeholder="Insert INTO Saled_appartment... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/edit_data/EditWorkerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="148" column="5" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+          <folding>
+            <element signature="e#4388#4389#0" expanded="true" />
+            <element signature="e#4419#4420#0" expanded="true" />
+            <element signature="e#4467#4468#0" expanded="true" />
+            <element signature="e#4507#4508#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4607#4608#0" expanded="true" />
+            <marker date="1463923220607" expanded="true" signature="2481:2502" placeholder="SELECT * fro... Manager" />
+            <marker date="1463923220607" expanded="true" signature="4903:4967" placeholder="SELECT * fro... Manager" />
+            <marker date="1463923220607" expanded="true" signature="8261:8488" placeholder="UPDATE Manag... " />
+            <marker date="1463923220607" expanded="true" signature="9268:9456" placeholder="Insert INTO Manager... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/AuthorizationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+          <folding>
+            <element signature="e#1803#1823#0" expanded="true" />
+            <element signature="e#2516#2536#0" expanded="true" />
+            <element signature="e#3241#3261#0" expanded="true" />
+            <marker date="1463919567360" expanded="true" signature="1108:1176" placeholder="SELECT * fro... Client" />
+            <marker date="1463919567360" expanded="true" signature="1108:1224" placeholder="SELECT Role Manager" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/DisplayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
+          <folding>
+            <element signature="e#1348#1368#0" expanded="true" />
+            <element signature="e#2055#2075#0" expanded="true" />
+            <element signature="e#2774#2794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/DealsBaseViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="167" column="5" selection-start-line="167" selection-start-column="5" selection-end-line="167" selection-end-column="5" />
+          <folding>
+            <element signature="e#5717#5718#0" expanded="true" />
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5796#5797#0" expanded="true" />
+            <element signature="e#5836#5837#0" expanded="true" />
+            <element signature="e#5866#5867#0" expanded="true" />
+            <element signature="e#5936#5937#0" expanded="true" />
+            <marker date="1463923220241" expanded="true" signature="1535:1553" placeholder="SELECT * fro... Deal" />
+            <marker date="1463923220241" expanded="true" signature="3657:3713" placeholder="SELECT * fro... Deal" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/FreeAppartmentViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="161" column="5" selection-start-line="161" selection-start-column="5" selection-end-line="161" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5611#5612#0" expanded="true" />
+            <element signature="e#5642#5643#0" expanded="true" />
+            <element signature="e#5690#5691#0" expanded="true" />
+            <element signature="e#5730#5731#0" expanded="true" />
+            <element signature="e#5760#5761#0" expanded="true" />
+            <element signature="e#5830#5831#0" expanded="true" />
+            <marker date="1463923220501" expanded="true" signature="1424:1453" placeholder="SELECT * fro... Free_appartment" />
+            <marker date="1463923220501" expanded="true" signature="3536:3607" placeholder="SELECT * fro... Free_appartment" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/SaledAppartmentViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="166" column="5" selection-start-line="166" selection-start-column="5" selection-end-line="166" selection-end-column="5" />
+          <folding>
+            <element signature="e#5728#5729#0" expanded="true" />
+            <element signature="e#5759#5760#0" expanded="true" />
+            <element signature="e#5807#5808#0" expanded="true" />
+            <element signature="e#5847#5848#0" expanded="true" />
+            <element signature="e#5877#5878#0" expanded="true" />
+            <element signature="e#5947#5948#0" expanded="true" />
+            <marker date="1463923220630" expanded="true" signature="1538:1568" placeholder="SELECT * fro... Saled_appartment" />
+            <marker date="1463923220630" expanded="true" signature="3651:3723" placeholder="SELECT * fro... Saled_appartment" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/WorkerViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#2228#2547#0" expanded="true" />
+            <element signature="e#2546#2547#0" expanded="true" />
+            <element signature="e#5997#5998#0" expanded="true" />
+            <element signature="e#6028#6029#0" expanded="true" />
+            <element signature="e#6076#6077#0" expanded="true" />
+            <element signature="e#6116#6117#0" expanded="true" />
+            <element signature="e#6146#6147#0" expanded="true" />
+            <element signature="e#6216#6217#0" expanded="true" />
+            <marker date="1463923220670" expanded="true" signature="1663:1684" placeholder="SELECT * fro... Manager" />
+            <marker date="1463923220670" expanded="true" signature="3772:3836" placeholder="SELECT * fro... Manager" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/freeAppartmentView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.709091">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/view_data/ClientViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="150" column="5" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+          <folding>
+            <element signature="e#4435#4436#0" expanded="true" />
+            <element signature="e#4466#4467#0" expanded="true" />
+            <element signature="e#4514#4515#0" expanded="true" />
+            <element signature="e#4554#4555#0" expanded="true" />
+            <element signature="e#4584#4585#0" expanded="true" />
+            <element signature="e#4654#4655#0" expanded="true" />
+            <marker date="1463923220354" expanded="true" signature="2529:2549" placeholder="SELECT * fro... Client" />
+            <marker date="1463923220354" expanded="true" signature="5010:5065" placeholder="SELECT * fro... Client" />
+            <marker date="1463923220354" expanded="true" signature="7515:7581" placeholder="SELECT * fro... Client" />
+            <marker date="1463923220354" expanded="true" signature="10039:10114" placeholder="SELECT * fro... Client" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/ViewInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/MainMenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8965517">
+          <caret line="168" column="8" selection-start-line="168" selection-start-column="8" selection-end-line="186" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2450#2472#0" expanded="true" />
+            <element signature="e#3190#3212#0" expanded="true" />
+            <element signature="e#3953#3984#0" expanded="true" />
+            <element signature="e#4711#4736#0" expanded="true" />
+            <element signature="e#5508#5539#0" expanded="true" />
+            <element signature="e#6335#6367#0" expanded="true" />
+            <element signature="e#7111#7133#0" expanded="true" />
+            <element signature="e#7869#7891#0" expanded="true" />
+            <element signature="e#8656#8687#0" expanded="true" />
+            <element signature="e#9434#9455#0" expanded="true" />
+            <element signature="e#10201#10229#0" expanded="true" />
+            <element signature="e#10985#11015#0" expanded="true" />
+            <element signature="e#11779#11809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/TechnicalSupportViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+          <folding>
+            <element signature="e#3044#3045#0" expanded="true" />
+            <element signature="e#3075#3076#0" expanded="true" />
+            <element signature="e#3193#3194#0" expanded="true" />
+            <element signature="e#3263#3264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/viewInfo.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.418182">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/info_data/InfoAuthorizationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="9" selection-start-line="39" selection-start-column="7" selection-end-line="57" selection-end-column="9" />
+          <folding>
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#1326#1357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/additional_information/UserInstructionViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="123" column="54" selection-start-line="123" selection-start-column="54" selection-end-line="123" selection-end-column="54" />
+          <folding>
+            <element signature="e#1692#1721#0" expanded="true" />
+            <element signature="e#2502#2534#0" expanded="true" />
+            <element signature="e#3174#3194#0" expanded="true" />
+            <element signature="e#3924#3944#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nyft/diploma/controller/info_data/InfoTechnicalSupportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85785955">
+          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding>
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#1329#1360#0" expanded="true" />
           </folding>
         </state>
       </provider>

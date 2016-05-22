@@ -33,11 +33,11 @@
 -->
             <Label layoutX="259.0" layoutY="58.0" text="Коротка інструкція користувача системи" />
             <Label layoutX="58.0" layoutY="161.0" text="Довідка по розділу:" />
-            <Button fx:id="authorizationInfoButton" layoutX="137.0" layoutY="207.0" mnemonicParsing="false" onAction="#viewAuthorizationInstruction" text="Авторизація користувача" />
-            <Button layoutX="137.0" layoutY="251.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="195.0" text="Перегляд даних" />
-            <Button layoutX="137.0" layoutY="299.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="195.0" text="Редагування даних" />
+            <Button fx:id="authorizationInfoButton" layoutX="137.0" layoutY="201.0" mnemonicParsing="false" onAction="#viewAuthorizationInstruction" prefHeight="31.0" prefWidth="195.0" text="Авторизація користувача" />
+            <Button layoutX="137.0" layoutY="251.0" mnemonicParsing="false" onAction="#viewViewInfo" prefHeight="31.0" prefWidth="195.0" text="Перегляд даних" />
+            <Button layoutX="137.0" layoutY="299.0" mnemonicParsing="false" onAction="#viewEditInfo" prefHeight="31.0" prefWidth="195.0" text="Редагування даних" />
             <Button layoutX="137.0" layoutY="345.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="195.0" text="Формування звітності" />
-            <Button fx:id="technicalSupportInfoButton" onAction="#viewTechnicalSupportInstruction" layoutX="137.0" layoutY="392.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="195.0" text="Технічна підтримка" />
+            <Button fx:id="technicalSupportInfoButton" layoutX="137.0" layoutY="392.0" mnemonicParsing="false" onAction="#viewTechnicalSupportInstruction" prefHeight="31.0" prefWidth="195.0" text="Технічна підтримка" />
             <Button fx:id="toMenuButton" layoutX="654.0" layoutY="511.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
             <ImageView fitHeight="301.0" fitWidth="219.0" layoutX="484.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
                <image>

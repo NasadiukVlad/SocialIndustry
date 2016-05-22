@@ -135,8 +135,19 @@ public class TimeTrackingViewController implements Initializable {
         }
     }
 
-    public void goToMenu() {
-        displayController.viewFXML(toMenuButton, "/fxml/mainMenu.fxml");
+    String userRole = new String();
+
+    public String getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
+    }
+
+
+    public void goToMenu(){
+        displayController.viewMenuFXML(toMenuButton, userRole);
     }
 
     public void searchByInitials() {
@@ -218,6 +229,7 @@ public class TimeTrackingViewController implements Initializable {
         addActivityField.setText(dataArray[1]);
         addPersonField.setText(dataArray[2]);
         addDateField.setText(dataArray[3]);
+        addTimeSpentField.setText(dataArray[4]);
         /*String[] ary = tableView.getSelectionModel().getSelectedItem().split("");
         System.out.println(pos.getRow());
 */

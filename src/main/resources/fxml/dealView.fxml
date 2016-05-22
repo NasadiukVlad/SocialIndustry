@@ -22,17 +22,17 @@
         <RowConstraints />
     </rowConstraints>
     <children>
-        <AnchorPane prefHeight="651.0" prefWidth="1007.0" GridPane.columnIndex="1">
+        <AnchorPane prefHeight="628.0" prefWidth="860.0" GridPane.columnIndex="1">
             <children>
                 <Label layoutX="75.0" layoutY="14.0" text="Автоматизована система управління відділом продажу ЖК &quot;Молодіжна ініціатива&quot;">
                     <font>
                         <Font size="15.0" />
                     </font></Label>
-                <TableView fx:id="tableView" layoutX="24.0" layoutY="53.0" prefHeight="563.0" prefWidth="727.0" />
-            <Button fx:id="toMenuButton" layoutX="834.0" layoutY="529.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
-                <TextField fx:id="searchInput" layoutX="785.0" layoutY="327.0" />
-                <Button fx:id="searchButton" layoutX="834.0" layoutY="387.0" mnemonicParsing="false" onAction="#searchByAdress" prefHeight="31.0" prefWidth="90.0" text="Знайти" />
-                <Label layoutX="821.0" layoutY="283.0" text="Пошук по адресі" />
+                <TableView fx:id="tableView" layoutX="24.0" layoutY="53.0" prefHeight="563.0" prefWidth="602.0" />
+            <Button fx:id="toMenuButton" layoutX="708.0" layoutY="495.0" mnemonicParsing="false" onAction="#goToMenu" prefHeight="25.0" prefWidth="90.0" text="До меню" />
+                <TextField fx:id="searchInput" layoutX="678.0" layoutY="297.0" />
+                <Button fx:id="searchButton" layoutX="708.0" layoutY="344.0" mnemonicParsing="false" onAction="#searchByAdress" prefHeight="31.0" prefWidth="90.0" text="Знайти" />
+                <Label layoutX="707.0" layoutY="254.0" text="Пошук по адресі" />
 
             </children>
         </AnchorPane>

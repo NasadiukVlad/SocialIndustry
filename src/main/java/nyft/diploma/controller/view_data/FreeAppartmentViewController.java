@@ -146,9 +146,19 @@ public class FreeAppartmentViewController implements Initializable {
         }
     }
 
+    String userRole = new String();
 
-    public void goToMenu() {
-        displayController.viewFXML(toMenuButton, "/fxml/mainMenu.fxml");
+    public String getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
+    }
+
+
+    public void goToMenu(){
+        displayController.viewMenuFXML(toMenuButton, userRole);
     }
 }
 
